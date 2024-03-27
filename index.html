@@ -150,6 +150,14 @@
             justify-content: center;
             margin: 20px auto;
         }
+         .container-destacado {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            align-items: center;
+            position: relative;
+        }
 
         .course {
             background-color: #ffffff;
@@ -183,6 +191,52 @@
             margin: 20px;
             text-align: center;
             font-size: 90%;
+        }
+
+        .destacado {
+            background-color: #ffffff;
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: calc(33.333% - 20px);
+            position:relative;
+
+        }
+
+        .destacado:hover {
+            transform: translateY(-5px);
+        }
+
+        .destacado img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .destacado h2 {
+            margin:10px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .destacado p {
+            margin: 40px;
+            text-align: center;
+            font-size: 90%;
+        }
+
+        .destacado-footer {
+            background-color: #a72828;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            position:absolute;
+            bottom: 0;
+            width: 100%;
+
         }
 
         .course-footer {
@@ -221,23 +275,38 @@
 <body>
     <div class="title">Comienza tu camino de aprendizaje con nosotros - Descubre una amplia variedad de cursos al mejor precio</div>
 
-<div class="container">
+<div class="container-destacado">
+    <div class="destacado">
+			<a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=MAR024" target="_blank">
+                <img src="imagenes/fortinet.jpg" alt="Curso 1"> 
+            </a>
+			<h2>Fortinet 7: de principiante a experto</h2>
+			<p>Curso 100% practico con laboratorios que te permitiran preparar y aprobar el examen NSE4 para la certificacion FCP de Fortinet</p>
+            <a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=MAR024" target="_blank">
+            <div class="destacado-footer">PROMOCIÓN - CURSO DESTACADO - 12,99 US$</div></a>
+
+	</div>
+</div>
+    <div class="container">
+		
 		<div class="course">
 			<a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=MAR024" target="_blank">
                 <img src="imagenes/fortinet.jpg" alt="Curso 1"> 
             </a>
 			<h2>Fortinet 7: de principiante a experto</h2>
-			<p>Curso 100% practico con laboratorios que te permitiran preparar la certificacion NSE4 de Fortinet</p>
-            <div class="course-footer">PROMOCIÓN</div>
+			<p>Curso 100% practico con laboratorios que te permitiran preparar y aprobar el examen NSE4 para la certificacion FCP de Fortinet</p>
+            <a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 
-		</div>
-		<div class="course">
+	</div>
+        <div class="course">
 			<a href="https://www.udemy.com/course/nse7-sdwan/?couponCode=MAR024" target="_blank">
                 <img src="imagenes/nse7.jpg" alt="Curso 1">
             </a>
 			<h2>Fortinet NSE7: Certificacion SD-WAN</h2>
 			<p>Curso orientado a la certificacion NSE7 de Fortinet SD-WAN con laboratorios practicos que puedes descargar</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/nse7-sdwan/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 
 		</div>
         <div class="course">
@@ -246,7 +315,8 @@
             </a>
 			<h2>Mikrotik: de principiante a experto</h2>
 			<p>Aprende en este curso a dominar los routers mikrotik de manera practica con laboratorios en tu propia pc</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/mikrotik-de-principiante-a-experto/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 
 		</div>
         <div class="course">
@@ -255,7 +325,8 @@
             </a>
 			<h2>Mikrotik: practicas avanzadas</h2>
 			<p>Domina las configuraciones y practicas avanzadas que esta maravillosa herramienta tiene para ofrecerte</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/mikrotik-practicas-de-un-experto/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 
 		</div>
         <div class="course">
@@ -264,7 +335,8 @@
             </a>
 			<h2>Terraform de principiante a certificado</h2>
 			<p>Aprende todo lo necesario para aprobar la certificacion de Terraform y da un paso en tu carrera como DevOps</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/hashicorp-terraform/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 
 		</div>
         <div class="course">
@@ -273,7 +345,8 @@
             </a>
 			<h2>WSL en menos de 2 horas</h2>
 			<p>Sumérgete en el fascinante mundo de Windows Subsystem for Linux! y domina esta herramienta GRATIS </p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/wsl2-mestria-en-2-horas/?referralCode=45612E673C8C05147989" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 
 		</div>
         <div class="course">
@@ -282,7 +355,8 @@
             </a>
 			<h2>FortiAnalyzer de principiante a experto</h2>
 			<p>Curso 100% practico con laboratorios que te permitiran preparar la certificacion NSE5 de FortiAnalyzer</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 		</div>
         <div class="course">
             <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAR024" target="_blank">
@@ -290,7 +364,8 @@
             </a>
 			<h2>FortiManager de principiante a experto</h2>
 			<p>Curso 100% practico con laboratorios que te permitiran preparar la certificacion NSE5 de FortiManager</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 		</div>
         <div class="course">
             <a href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAR024" target="_blank">
@@ -298,7 +373,8 @@
             </a>
 			<h2>Nagios: El estandard en monitoreo</h2>
 			<p>Aprende de manera practica como montar y programar al maximo esta brillante herramienta de observabilidad</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 		</div>
         <div class="course">
             <a href="https://www.udemy.com/course/curso-bacula/?couponCode=MAR024" target="_blank">
@@ -306,7 +382,8 @@
             </a>
 			<h2>Bacula: Solucion de respaldos empresarial</h2>
 			<p>Aprende a utilizar la solucion de respaldos empresarial Bacula y mantendras un respaldo confiable de tus datos</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/curso-bacula/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 		</div>
         <div class="course">
             <a href="https://www.udemy.com/course/ocs-gestion-de-inventario-profesional/?couponCode=MAR024" target="_blank">
@@ -314,7 +391,8 @@
             </a>
 			<h2>OCS: Gestion de inventario profesional</h2>
 			<p>Llevar el inventario tecnologico de nuestra empresa con OCS de forma profesional es una practica que no puede faltarte!</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/ocs-gestion-de-inventario-profesional/?couponCode=MAR024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 		</div>
         <div class="course">
             <a href="https://www.udemy.com/course/aprende-certifica-finops-practitioner-focp-en-espanolingles/?couponCode=FINOPS-MARZO-2024" target="_blank">
@@ -322,7 +400,8 @@
             </a>
 			<h2>FinOps Practitioner FOCP</h2>
 			<p>Gestiona eficientemente los costos en la nube y preparate para la certificación FOCP</p>
-            <div class="course-footer">PROMOCIÓN</div>
+            <a href="https://www.udemy.com/course/aprende-certifica-finops-practitioner-focp-en-espanolingles/?couponCode=FINOPS-MARZO-2024" target="_blank">
+            <div class="course-footer">PROMOCIÓN - 12,99 US$</div></a>
 		</div>
 	</div>
     <div class="footer">
