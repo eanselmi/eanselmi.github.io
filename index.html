@@ -159,6 +159,8 @@
             overflow: hidden;
             transition: transform 0.2s;
             width: calc(33.333% - 20px);
+            position:relative;
+
         }
 
         .course:hover {
@@ -171,8 +173,16 @@
             border-radius: 8px 8px 0 0;
         }
 
-        .course h2, .course p {
-            margin: 15px;
+        .course h2 {
+            margin: 10px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .course p {
+            margin: 20px;
+            text-align: center;
+            font-size: 90%;
         }
 
         .course-footer {
@@ -181,6 +191,10 @@
             text-align: center;
             padding: 10px;
             font-weight: bold;
+            position:absolute;
+            bottom: 0;
+            width: 100%;
+
         }
 
         .footer {
