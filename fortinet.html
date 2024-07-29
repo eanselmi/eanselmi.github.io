@@ -1,251 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <!-- Google tag (gtag.js) -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-      <title>Promociones Apprendiendo.net</title>
-      <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRT04GYWVL"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date()); 
-         
-         gtag('config', 'G-HRT04GYWVL');
-      </script>
-      <meta property="og:image" content="/imagenes/imagen_previa_promos.jpg"/>      
-      <style>
-         .banner {
-         background-color: red;
-         color: white;
-         text-align: center;
-         padding: 10px 0;
-         font-size: 20px;
-         font-weight: bold;
-         animation: blinker 9s linear infinite;
-         }
-         @keyframes blinker {
-            70% {
-                opacity: 0;
-            }
-         }
+<head>
+    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Promociones Apprendiendo.net</title>
+    <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRT04GYWVL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); 
+        gtag('config', 'G-HRT04GYWVL');
+    </script>
+    <meta property="og:image" content="/imagenes/imagen_previa_promos.jpg"/>      
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url("imagenes/fondo.jpg"); 
+            background-repeat: repeat; 
+            background-size: auto;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .title {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px auto;
+            max-width: 1800px;
+            flex-grow: 1;
+        }
+        .course {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 20px;
+            max-width: 320px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .course:hover {
+            transform: scale(1.1);
+        }
+        .course img {
+            max-width: 100%;
+            height: auto;
+        }
+        .course h2 {
+            margin-top: 10px;
+            font-size: 24px;
+            text-align: center;
+            color: #222;
+        }
+        .course p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #444;
+            text-align: center;
+            padding: 10px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .course-footer {
+            background-color: #28a745;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer {
+           background-color: #007bff;
+           color: #ffffff;
+           padding: 1px; /* Ajusta este valor para cambiar la altura */
+           text-align: center;
+           font-size: 14px;
+           font-weight: 700;
+           width: 100%;
+}
 
-         /* .banner {
-         background-color: red;
-         color: white;
-         text-align: center;
-         padding: 1px 0 ;
-
-         
-         }
-         .banner p {
-         text-align: center;
-         width: 100%;
-         font-size: 20px;
-         font-weight: bold; */
-         /* animation: moveText 20s linear infinite, blinker 5s linear infinite; */
-         /* animation: blinker 7s linear infinite;
-
-         }
-         @keyframes moveText {
-            0% {
-                transform: translateX(100%);
+        @media (max-width: 768px) {
+            .course {
+                width: calc(50% - 20px);
             }
-            100% {
-                transform: translateX(-100%);
+        }
+        @media (max-width: 480px) {
+            .course {
+                width: calc(100% - 20px);
             }
-         }
-         @keyframes blinker {
-            70% {
-                opacity: 0;
-            }
-         } */
-         
-         h1 {
-         text-align: center;
-         font-size: 36px;
-         margin-top: 50px;
-         }
-         .container {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         margin: 50px auto;
-         max-width: 1800px;
-         }
-         .course {
-         background-color: #cbc8c8;
-         border-radius: 10px;
-         margin: 20px;
-         max-width: 280px;
-         overflow: hidden;
-         box-shadow: 0 0 10px rgba(0,0,0,0.3);
-         transition: transform 0.3s;
-         }
-         .course:hover {
-         transform: scale(1.1);
-         }
-         .course img {
-         max-width: 100%;
-         height: auto;
-         }
-         .course h2 {
-         margin-top: 10px;
-         font-size: 24px;
-         text-align: center;
-         color: #222;
-         }
-         .course p {
-         margin-top: 10px;
-         font-size: 16px;
-         line-height: 1.5;
-         color: #444;
-         text-align: center;
-         padding: 10px;
-         height: 100px;
-         overflow: hidden;
-         }
-         body {
-         font-family: 'Roboto', sans-serif;
-         background-image: url("imagenes/fondo.jpg"); 
-         background-repeat: repeat; 
-         background-size: auto;
-         background-color: #f0f0f0;
-         color: #333;
-         margin: 0;
-         padding: 0;
-         }
-         .title {
-         background-color: #007bff;
-         color: #ffffff;
-         padding: 10px;
-         text-align: center;
-         font-size: 17px;
-         font-weight: 700;
-         }
-         .container {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         margin: 20px auto;
-         }
-         .container-destacado {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         margin: 20px auto;
-         align-items: center;
-         position: relative;
-         }
-         .course {
-         background-color: #ffffff;
-         margin: 10px;
-         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-         border-radius: 8px;
-         overflow: hidden;
-         transition: transform 0.2s;
-         width: calc(33.333% - 20px);
-         position:relative;
-         }
-         .course:hover {
-         transform: translateY(-5px);
-         }
-         .course img {
-         width: 100%;
-         height: auto;
-         border-radius: 8px 8px 0 0;
-         }
-         .course h2 {
-         margin: 10px;
-         text-align: center;
-         font-size: medium;
-         }
-         .course p {
-         margin: 20px;
-         text-align: center;
-         font-size: 90%;
-         }
-         .course-footer {
-         background-color: #28a745;
-         color: #ffffff;
-         text-align: center;
-         padding: 5px;
-         font-weight: bold;
-         position:absolute;
-         bottom: 0;
-         width: 100%;
-         }
-         .footer {
-         background-color: #007bff;
-         color: #ffffff;
-         text-align: center;
-         padding: 5px;
-         font-size: 14px;
-         }
-         @media (max-width: 768px) {
-         .course {
-         width: calc(50% - 20px);
-         }
-         }
-         @media (max-width: 480px) {
-         .course {
-         width: calc(100% - 20px);
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <body>
-         <div class="title"><i class="fas fa-rocket"></i> Aprendizaje dinámico con laboratorios Hands-On sin costo adicional! - Acceso de por vida con un solo pago! <i class="fas fa-rocket"></i></div>        
-         <!-- <div class="banner"><i class="fas fa-egg"></i> Promoción especial por  - Valida solo hasta el 3 de Abril <i class="fas fa-egg"></i></div> -->
-         
-         <div class="container">
-            <div class="course">
-               <a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
-               <img src="imagenes/fortinet.jpg" alt="Curso 1"> 
-               </a>
-               <h2>Fortinet 7.x De principiante a experto</h2>
-               <p>Curso 100% práctico con laboratorios que te permitirán preparar y aprobar el examen NSE4 para las certificaciones FCP</p>
-               <a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
-                  <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
-               </a>
-            </div>
-            <div class="course">
-               <a href="https://www.udemy.com/course/nse7-sdwan/?couponCode=JULIO24" target="_blank">
-               <img src="imagenes/nse7.jpg" alt="Curso 1">
-               </a>
-               <h2>Fortinet NSE7: Certificacion SD-WAN</h2>
-               <p>Curso orientado al examen NSE7 de la certificación FCSS de SD-WAN con laboratorios prácticos que puedes descargar</p>
-               <a href="https://www.udemy.com/course/nse7-sdwan/?couponCode=JULIO24" target="_blank">
-                  <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
-               </a>
-            </div>
-            
-            <div class="course">
-               <a href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
-               <img src="imagenes/fortianalyzer.jpg" alt="Curso 2">
-               </a>
-               <h2>FortiAnalyzer de principiante a experto</h2>
-               <p>Curso 100% práctico con laboratorios que te permitirán preparar el examen FAZ para la certificación FCP</p>
-               <a href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
-                  <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
-               </a>
-            </div>
-            <div class="course">
-               <a href="https://www.udemy.com/course/fortimanager/?couponCode=JULIO24" target="_blank">
-               <img src="imagenes/fortimanager.jpg" alt="Curso 2">
-               </a>
-               <h2>FortiManager de principiante a experto</h2>
-               <p>Curso 100% práctico con laboratorios que te permitirá preparar el examen FMG de la certificacion FCP</p>
-               <a href="https://www.udemy.com/course/fortimanager/?couponCode=JULIO24" target="_blank">
-                  <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
-               </a>
-            </div>            
-         <div class="footer">
-            <p>©Copyright: Eduardo Nazareno Anselmi - <a href="https://www.linkedin.com/in/nazareno-anselmi/" target="_blank" style="color: aqua;">Visítame en mi LinkedIn</a>
-         </div>
-   </body>
+        }
+    </style>
+</head>
+<body>
+    <div class="title"><i class="fas fa-rocket"></i> Aprendizaje dinámico con laboratorios Hands-On sin costo adicional! - Acceso de por vida con un solo pago! <i class="fas fa-rocket"></i></div>        
+    <div class="container">
+        <div class="course">
+            <a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
+                <img src="imagenes/fortinet.jpg" alt="Curso 1">
+            </a>
+            <h2>Fortinet 7.x De principiante a experto</h2>
+            <p>Curso 100% práctico con laboratorios que te permitirán preparar y aprobar el examen NSE4 para las certificaciones FCP</p>
+            <a href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
+                <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
+            </a>
+        </div>
+        <div class="course">
+            <a href="https://www.udemy.com/course/nse7-sdwan/?couponCode=JULIO24" target="_blank">
+                <img src="imagenes/nse7.jpg" alt="Curso 1">
+            </a>
+            <h2>Fortinet NSE7: Certificación SD-WAN</h2>
+            <p>Curso orientado al examen NSE7 de la certificación FCSS de SD-WAN con laboratorios prácticos que puedes descargar</p>
+            <a href="https://www.udemy.com/course/nse7-sdwan/?couponCode=JULIO24" target="_blank">
+                <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
+            </a>
+        </div>
+        <div class="course">
+            <a href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
+                <img src="imagenes/fortianalyzer.jpg" alt="Curso 2">
+            </a>
+            <h2>FortiAnalyzer de principiante a experto</h2>
+            <p>Curso 100% práctico con laboratorios que te permitirán preparar el examen FAZ para la certificación FCP</p>
+            <a href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=JULIO24" target="_blank">
+                <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
+            </a>
+        </div>
+        <div class="course">
+            <a href="https://www.udemy.com/course/fortimanager/?couponCode=JULIO24" target="_blank">
+                <img src="imagenes/fortimanager.jpg" alt="Curso 2">
+            </a>
+            <h2>FortiManager de principiante a experto</h2>
+            <p>Curso 100% práctico con laboratorios que te permitirá preparar el examen FMG de la certificación FCP</p>
+            <a href="https://www.udemy.com/course/fortimanager/?couponCode=JULIO24" target="_blank">
+                <div class="course-footer">PROMOCIÓN - 12.99 US$</div>
+            </a>
+        </div>               
+    </div>
+    <div class="footer">
+        <p>©Copyright: Eduardo Nazareno Anselmi - <a href="https://www.linkedin.com/in/nazareno-anselmi/" target="_blank" style="color: aqua;">Visítame en mi LinkedIn</a></p>
+    </div>
+</body>
 </html>
