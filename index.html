@@ -2060,9 +2060,171 @@
     </section>
   </main>
 
-  <!-- Footer -->
+<!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <
+      <div>
+        <div class="footer-logo">Apprendiendo.net</div>
+        <div class="footer-text">
+          Plataforma especializada en cursos de tecnología con enfoque práctico y orientado a certificaciones profesionales.
+        </div>
+        <div class="footer-text">
+          Desde seguridad en redes y networking hasta DevOps e Infraestructura, con experiencias reales de producción.
+        </div>
+      </div>
+      <div>
+        <div class="footer-column-title">Enlaces rápidos</div>
+        <div class="footer-links">
+          <a href="#cursos">Todos los cursos</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#sobre-mi">Sobre el instructor</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-column-title">Categorías</div>
+        <div class="footer-links">
+          <a href="#cursos" data-filter-link="fortinet">Fortinet</a>
+          <a href="#cursos" data-filter-link="mikrotik">Mikrotik</a>
+          <a href="#cursos" data-filter-link="devops">DevOps</a>
+          <a href="#cursos" data-filter-link="infrastructure">Infrastructure</a>
+          <a href="#cursos" data-filter-link="finops">FinOps</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-column-title">Contacto</div>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/nazareno-anselmi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn (Eduardo Nazareno Anselmi)
+          </a>
+        </div>
+      </div>
+    </div>
 
-      
+    <div class="footer-bottom">
+      <div>© 2025 Apprendiendo.net — Todos los derechos reservados.</div>
+      <div>
+        Creado por
+        <a
+          href="https://www.linkedin.com/in/nazareno-anselmi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nazareno Anselmi
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Scroll suave para nav
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href").substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        const y = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    });
+  });
+
+  // Filtros por categoría
+  const filterButtons = document.querySelectorAll(".filter-chip");
+  const courseCards = document.querySelectorAll(".course-card");
+
+  function applyFilter(filter) {
+    courseCards.forEach((card) => {
+      const cat = card.getAttribute("data-category");
+      if (filter === "all" || cat === filter) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      this.classList.add("active");
+      const filter = this.getAttribute("data-filter");
+      applyFilter(filter);
+    });
+  });
+
+  // Filtros desde el footer (links de categorías)
+  document.querySelectorAll("[data-filter-link]").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const filter = this.getAttribute("data-filter-link");
+      const targetSection = document.getElementById("cursos");
+      if (targetSection) {
+        e.preventDefault();
+        const y = targetSection.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: "smooth" });
+
+        // Activar filtro correspondiente
+        const btn = document.querySelector('.filter-chip[data-filter="' + filter + '"]');
+        if (btn) {
+          filterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          applyFilter(filter);
+        }
+      }
+    });
+  });
+
+  // Countdown simple (puedes cambiar la fecha en data-deadline del hero)
+  function setupCountdown() {
+    const countdownContainer = document.getElementById("hero-countdown");
+    const inlineCountdown = document.getElementById("promo-countdown-inline");
+    if (!countdownContainer) return;
+
+    const deadlineStr = countdownContainer.dataset.deadline;
+    const deadline = new Date(deadlineStr).getTime();
+
+    function update() {
+      const now = Date.now();
+      const diff = deadline - now;
+
+      if (diff <= 0) {
+        document.getElementById("count-days").textContent = "0";
+        document.getElementById("count-hours").textContent = "0";
+        document.getElementById("count-minutes").textContent = "0";
+        if (inlineCountdown) inlineCountdown.textContent = "muy pronto · última oportunidad";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+      document.getElementById("count-days").textContent = days;
+      document.getElementById("count-hours").textContent = hours;
+      document.getElementById("count-minutes").textContent = minutes;
+
+      if (inlineCountdown) {
+        if (days > 1) {
+          inlineCountdown.textContent = days + " días";
+        } else if (days === 1) {
+          inlineCountdown.textContent = "1 día";
+        } else {
+          inlineCountdown.textContent = hours + "h " + minutes + "m";
+        }
+      }
+    }
+
+    update();
+    setInterval(update, 60000); // actualiza cada minuto
+  }
+
+  setupCountdown();
+</script>
+</body>
+</html>
