@@ -1,0 +1,58 @@
+name: Monthly promo update
+
+on:
+  schedule:
+    - cron: '0 12 1 * *'  # 1° de cada mes a las 12:00 UTC
+  workflow_dispatch:        # permite ejecutarlo manualmente desde GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  update-promo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute new values
+        run: |
+          MONTH=$(date +%m)
+          YEAR=$(date +%Y)
+
+          case $MONTH in
+            01) ABBR="JAN" ;; 02) ABBR="FEB" ;; 03) ABBR="MAR" ;;
+            04) ABBR="APR" ;; 05) ABBR="MAY" ;; 06) ABBR="JUN" ;;
+            07) ABBR="JUL" ;; 08) ABBR="AUG" ;; 09) ABBR="SEP" ;;
+            10) ABBR="OCT" ;; 11) ABBR="NOV" ;; 12) ABBR="DEC" ;;
+          esac
+
+          COUPON="${ABBR}${YEAR}"
+          LAST_DAY=$(date -d "$(date +%Y-%m-01) +1 month -1 day" +%d)
+          DEADLINE="${YEAR}-${MONTH}-${LAST_DAY}T23:59:59-03:00"
+          TODAY=$(date +%Y-%m-%d)
+
+          echo "COUPON=$COUPON"       >> $GITHUB_ENV
+          echo "DEADLINE=$DEADLINE"   >> $GITHUB_ENV
+          echo "TODAY=$TODAY"         >> $GITHUB_ENV
+
+      - name: Update coupon codes in index.html
+        run: |
+          # Reemplaza solo patrones mes+año (ej: MAR2026). No toca cupones como FINOPS.
+          sed -i -E "s/couponCode=[A-Z]{2,6}[0-9]{4}/couponCode=${COUPON}/g" index.html
+
+      - name: Update countdown deadline in index.html
+        run: |
+          sed -i "s|data-deadline=\"[^\"]*\"|data-deadline=\"${DEADLINE}\"|g" index.html
+
+      - name: Update lastmod in sitemap.xml
+        run: |
+          sed -i "s|<lastmod>[^<]*</lastmod>|<lastmod>${TODAY}</lastmod>|g" sitemap.xml
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html sitemap.xml
+          git diff --cached --quiet && echo "Sin cambios detectados" || \
+            git commit -m "$(date +'%B %Y') promo update" && git push
