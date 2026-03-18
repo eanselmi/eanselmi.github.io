@@ -143,6 +143,35 @@
             }
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Obtengo certificado de finalización?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, al completar cada curso Udemy emite un certificado de finalización."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura la promoción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las promociones y cupones cambian con frecuencia. Te recomendamos aprovechar el precio actual desde esta página."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto soporte recibo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El instructor responde personalmente las consultas relacionadas con el contenido de cada curso, aportando contexto de proyectos reales."
+            }
+          }
+        ]
       }
     ]
   }
@@ -384,7 +413,15 @@
 
     main {
       flex: 1;
+      display: flex;
+      flex-direction: column;
     }
+
+    #hero        { order: 1; }
+    #cursos      { order: 2; }
+    #beneficios  { order: 3; }
+    #testimonios { order: 4; }
+    #sobre-mi    { order: 5; }
 
     section {
       padding: 3.5rem 1.25rem;
@@ -1328,8 +1365,7 @@
           </div>
 
           <h1 class="hero-title">
-            Domina la tecnología con
-            <strong>cursos prácticos, certificados y 100% originales.</strong>
+            Cursos de <strong>Fortinet, Mikrotik, DevOps y FinOps</strong> con laboratorios prácticos y certificaciones reales.
           </h1>
 
           <p class="hero-subtitle">
@@ -1370,7 +1406,7 @@
           <div class="hero-metrics">
             <div class="metric">
               <div class="metric-label">Estudiantes satisfechos</div>
-              <div class="metric-value">70.000+</div>
+              <div class="metric-value">90.000+</div>
             </div>
             <div class="metric">
               <div class="metric-label">Aprobación promedio</div>
@@ -2170,7 +2206,7 @@
           <div class="instructor-stats">
             <div>
               <div class="instructor-stat-label">Alumnos en Udemy</div>
-              <div class="instructor-stat-value">70.000+ estudiantes</div>
+              <div class="instructor-stat-value">90.000+ estudiantes</div>
             </div>
             <div>
               <div class="instructor-stat-label">Experiencia profesional</div>
