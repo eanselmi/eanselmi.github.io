@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://promos.apprendiendo.net/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/imagenes/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#f97316" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <!-- Open Graph -->
@@ -1443,6 +1444,18 @@
         justify-content: center;
       }
     }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -1792,7 +1805,7 @@
 
         <!-- CTA final -->
         <div class="final-cta">
-          <h3>¡No pierdas esta oportunidad única!</h3>
+          <h2>¡No pierdas esta oportunidad única!</h2>
           <p>
             Acceso de por vida, laboratorios prácticos y actualizaciones constantes.
             Invierte en tu futuro profesional hoy mismo y prepárate para dar el próximo salto en tu carrera.
@@ -2369,6 +2382,7 @@
     <!-- Instructor / Branding personal -->
     <section id="sobre-mi">
       <div class="section-inner instructor-grid">
+        <h2 class="visually-hidden">Sobre el instructor</h2>
         <div class="instructor-card">
           <img src="imagenes/instructor.webp" alt="Eduardo Nazareno Anselmi" class="instructor-avatar" style="object-fit:cover;" />
           <div class="instructor-name">Eduardo Nazareno Anselmi</div>
@@ -2649,10 +2663,10 @@
   });
 
   // GA4 scroll depth — registra la primera vez que cada sección entra en viewport
-  if (typeof IntersectionObserver !== "undefined" && typeof gtag !== "undefined") {
+  if (typeof IntersectionObserver !== "undefined") {
     const sectionObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && typeof gtag !== "undefined") {
           gtag("event", "section_view", {
             event_category: "Engagement",
             event_label: entry.target.id
