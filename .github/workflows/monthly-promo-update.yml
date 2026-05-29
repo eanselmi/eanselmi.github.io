@@ -30,11 +30,13 @@ jobs:
           COUPON="${ABBR}${YEAR}"
           LAST_DAY=$(date -d "$(date +%Y-%m-01) +1 month -1 day" +%d)
           DEADLINE="${YEAR}-${MONTH}-${LAST_DAY}T23:59:59-03:00"
+          VALID_UNTIL="${YEAR}-${MONTH}-${LAST_DAY}"
           TODAY=$(date +%Y-%m-%d)
 
-          echo "COUPON=$COUPON"       >> $GITHUB_ENV
-          echo "DEADLINE=$DEADLINE"   >> $GITHUB_ENV
-          echo "TODAY=$TODAY"         >> $GITHUB_ENV
+          echo "COUPON=$COUPON"           >> $GITHUB_ENV
+          echo "DEADLINE=$DEADLINE"       >> $GITHUB_ENV
+          echo "VALID_UNTIL=$VALID_UNTIL" >> $GITHUB_ENV
+          echo "TODAY=$TODAY"             >> $GITHUB_ENV
 
       - name: Update coupon codes in index.html and subpages
         run: |
@@ -47,6 +49,12 @@ jobs:
       - name: Update countdown deadline in index.html
         run: |
           sed -i "s|data-deadline=\"[^\"]*\"|data-deadline=\"${DEADLINE}\"|g" index.html
+
+      - name: Update priceValidUntil in Offer schemas
+        run: |
+          # Actualiza el priceValidUntil del JSON-LD en home + subpáginas.
+          # Refleja el último día del mes actual (cuándo expira el cupón vigente).
+          sed -i -E "s|\"priceValidUntil\": \"[0-9-]+\"|\"priceValidUntil\": \"${VALID_UNTIL}\"|g" index.html */index.html
 
       - name: Update lastmod in sitemap.xml
         run: |

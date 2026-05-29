@@ -5,8 +5,10 @@
   <title>Cursos Fortinet, Mikrotik y DevOps desde $12.99 | Apprendiendo.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Security headers via meta (lo no-posible aquí: HSTS, X-Frame-Options, Permissions-Policy → requieren proxy/CDN delante de GitHub Pages) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.google-analytics.com; manifest-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.google-analytics.com; manifest-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="alternate" hreflang="es" href="https://promos.apprendiendo.net" />
+  <link rel="alternate" hreflang="x-default" href="https://promos.apprendiendo.net" />
   <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico" />
   <meta name="description"
         content="Cursos de Fortinet, Mikrotik, Terraform y FinOps con laboratorios hands-on y soporte directo del instructor. Certificaciones reales en español desde U$S 12.99." />
@@ -23,225 +25,389 @@
   <meta property="og:locale"      content="es_AR" />
   <meta property="og:title"       content="Cursos Profesionales de Fortinet, Mikrotik y DevOps — Apprendiendo.net" />
   <meta property="og:description" content="Cursos de Fortinet, Mikrotik, Terraform y FinOps con laboratorios hands-on y soporte directo del instructor. Certificaciones reales en español desde U$S 12.99." />
-  <meta property="og:image"       content="https://promos.apprendiendo.net/imagenes/apprendiendo.png" />
+  <meta property="og:image"       content="https://promos.apprendiendo.net/imagenes/apprendiendo-og.webp" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Cursos Profesionales de Fortinet, Mikrotik y DevOps — Apprendiendo.net" />
   <meta name="twitter:description" content="Cursos de Fortinet, Mikrotik, Terraform y FinOps con laboratorios hands-on y soporte directo del instructor. Certificaciones reales en español desde U$S 12.99." />
-  <meta name="twitter:image"       content="https://promos.apprendiendo.net/imagenes/apprendiendo.png" />
+  <meta name="twitter:image"       content="https://promos.apprendiendo.net/imagenes/apprendiendo-og.webp" />
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://promos.apprendiendo.net/#instructor",
-        "name": "Eduardo Nazareno Anselmi",
-        "jobTitle": "Cloud Architect & Network Engineer",
-        "url": "https://www.linkedin.com/in/nazareno-anselmi/",
-        "sameAs": [
-          "https://www.linkedin.com/in/nazareno-anselmi/",
-          "https://www.udemy.com/user/nazareno-anselmi/"
-        ],
-        "knowsAbout": ["Fortinet", "Mikrotik", "DevOps", "Terraform", "FinOps", "AWS", "Kubernetes"]
-      },
-      {
-        "@type": "ItemList",
-        "name": "Cursos de tecnología — Apprendiendo.net",
-        "url": "https://promos.apprendiendo.net/",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "Course",
-              "name": "Fortinet 7.x De principiante a experto",
-              "description": "Curso 100% práctico con laboratorios para preparar y aprobar el examen core FCP. Domina FortiGate en entornos empresariales.",
-              "url": "https://promos.apprendiendo.net/fortinet-7-principiante-experto/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "5200", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "Course",
-              "name": "Fortinet NSE7: Certificación SD-WAN",
-              "description": "Curso orientado al examen NSE7 de la certificación FCSS con laboratorios descargables para dominar SD-WAN empresarial.",
-              "url": "https://promos.apprendiendo.net/fortinet-nse7-sdwan/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "680", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "Course",
-              "name": "Mikrotik: de principiante a experto",
-              "description": "Desde la configuración inicial hasta escenarios avanzados para dominar routers Mikrotik con laboratorios en tu propia PC.",
-              "url": "https://promos.apprendiendo.net/mikrotik-principiante-experto/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "14.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "5338", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "Course",
-              "name": "Mikrotik: prácticas avanzadas",
-              "description": "Configuraciones avanzadas y troubleshooting real para llevar tus habilidades Mikrotik al siguiente nivel.",
-              "url": "https://promos.apprendiendo.net/mikrotik-avanzado/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "890", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "item": {
-              "@type": "Course",
-              "name": "Terraform de principiante a certificado",
-              "description": "Aprende todo lo necesario para aprobar la certificación de Terraform y da un paso adelante en tu carrera como DevOps.",
-              "url": "https://promos.apprendiendo.net/terraform-principiante-certificado/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "2100", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "item": {
-              "@type": "Course",
-              "name": "FortiAnalyzer de principiante a experto",
-              "description": "Domina la instalación, administración y analítica de eventos de seguridad con FortiAnalyzer.",
-              "url": "https://promos.apprendiendo.net/fortianalyzer-principiante-experto/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "620", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "item": {
-              "@type": "Course",
-              "name": "FortiManager de principiante a experto",
-              "description": "Aprende a administrar múltiples equipos Fortinet de forma centralizada con FortiManager.",
-              "url": "https://promos.apprendiendo.net/fortimanager-principiante-experto/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "780", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "item": {
-              "@type": "Course",
-              "name": "FinOps Practitioner FOCP",
-              "description": "Gestiona eficientemente los costos en la nube y prepárate para la certificación FOCP con un enfoque práctico.",
-              "url": "https://promos.apprendiendo.net/finops-focp/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "420", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 9,
-            "item": {
-              "@type": "Course",
-              "name": "WSL en menos de 2 horas",
-              "description": "Domina Windows Subsystem for Linux para potenciar tu entorno de desarrollo y DevOps sin sacrificar recursos.",
-              "url": "https://promos.apprendiendo.net/wsl-2-horas/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "540", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 10,
-            "item": {
-              "@type": "Course",
-              "name": "Nagios: El estándar en monitoreo",
-              "description": "Aprende de manera práctica cómo montar y programar al máximo esta herramienta de observabilidad para tu infraestructura.",
-              "url": "https://promos.apprendiendo.net/nagios-monitoreo/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "1100", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 11,
-            "item": {
-              "@type": "Course",
-              "name": "Bacula: Solución de respaldos empresarial",
-              "description": "Diseña y opera una solución de respaldos sólida para tus datos críticos usando Bacula.",
-              "url": "https://promos.apprendiendo.net/bacula-respaldos/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "340", "bestRating": "5" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 12,
-            "item": {
-              "@type": "Course",
-              "name": "OCS: Gestión de inventario profesional",
-              "description": "Lleva el inventario tecnológico de tu empresa con OCS de forma profesional y centralizada.",
-              "url": "https://promos.apprendiendo.net/ocs-inventario/",
-              "provider": { "@id": "https://promos.apprendiendo.net/#instructor" },
-              "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "280", "bestRating": "5" }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://promos.apprendiendo.net/#instructor",
+      "name": "Eduardo Nazareno Anselmi",
+      "jobTitle": "Cloud Architect & Network Engineer",
+      "url": "https://www.linkedin.com/in/nazareno-anselmi/",
+      "sameAs": [
+        "https://www.linkedin.com/in/nazareno-anselmi/",
+        "https://www.udemy.com/user/nazareno-anselmi/"
+      ],
+      "knowsAbout": [
+        "Fortinet",
+        "Mikrotik",
+        "DevOps",
+        "Terraform",
+        "FinOps",
+        "AWS",
+        "Kubernetes"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Cursos de tecnología — Apprendiendo.net",
+      "url": "https://promos.apprendiendo.net/",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Course",
+            "name": "Fortinet 7.x De principiante a experto",
+            "description": "Curso 100% práctico con laboratorios para preparar y aprobar el examen core FCP. Domina FortiGate en entornos empresariales.",
+            "url": "https://promos.apprendiendo.net/fortinet-7-principiante-experto/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "5200",
+              "bestRating": "5"
             }
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Obtengo certificado de finalización?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, al completar cada curso Udemy emite un certificado de finalización."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cuánto dura la promoción?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Las promociones y cupones cambian con frecuencia. Te recomendamos aprovechar el precio actual desde esta página."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cuánto soporte recibo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El instructor responde personalmente las consultas relacionadas con el contenido de cada curso, aportando contexto de proyectos reales."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Course",
+            "name": "Fortinet NSE7: Certificación SD-WAN",
+            "description": "Curso orientado al examen NSE7 de la certificación FCSS con laboratorios descargables para dominar SD-WAN empresarial.",
+            "url": "https://promos.apprendiendo.net/fortinet-nse7-sdwan/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "680",
+              "bestRating": "5"
             }
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Course",
+            "name": "Mikrotik: de principiante a experto",
+            "description": "Desde la configuración inicial hasta escenarios avanzados para dominar routers Mikrotik con laboratorios en tu propia PC.",
+            "url": "https://promos.apprendiendo.net/mikrotik-principiante-experto/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "14.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "5338",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Course",
+            "name": "Mikrotik: prácticas avanzadas",
+            "description": "Configuraciones avanzadas y troubleshooting real para llevar tus habilidades Mikrotik al siguiente nivel.",
+            "url": "https://promos.apprendiendo.net/mikrotik-avanzado/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.7",
+              "ratingCount": "890",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Course",
+            "name": "Terraform de principiante a certificado",
+            "description": "Aprende todo lo necesario para aprobar la certificación de Terraform y da un paso adelante en tu carrera como DevOps.",
+            "url": "https://promos.apprendiendo.net/terraform-principiante-certificado/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "2100",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Course",
+            "name": "FortiAnalyzer de principiante a experto",
+            "description": "Domina la instalación, administración y analítica de eventos de seguridad con FortiAnalyzer.",
+            "url": "https://promos.apprendiendo.net/fortianalyzer-principiante-experto/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "620",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Course",
+            "name": "FortiManager de principiante a experto",
+            "description": "Aprende a administrar múltiples equipos Fortinet de forma centralizada con FortiManager.",
+            "url": "https://promos.apprendiendo.net/fortimanager-principiante-experto/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "780",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Course",
+            "name": "FinOps Practitioner FOCP",
+            "description": "Gestiona eficientemente los costos en la nube y prepárate para la certificación FOCP con un enfoque práctico.",
+            "url": "https://promos.apprendiendo.net/finops-focp/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "420",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Course",
+            "name": "WSL en menos de 2 horas",
+            "description": "Domina Windows Subsystem for Linux para potenciar tu entorno de desarrollo y DevOps sin sacrificar recursos.",
+            "url": "https://promos.apprendiendo.net/wsl-2-horas/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "540",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "Course",
+            "name": "Nagios: El estándar en monitoreo",
+            "description": "Aprende de manera práctica cómo montar y programar al máximo esta herramienta de observabilidad para tu infraestructura.",
+            "url": "https://promos.apprendiendo.net/nagios-monitoreo/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "1100",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "Course",
+            "name": "Bacula: Solución de respaldos empresarial",
+            "description": "Diseña y opera una solución de respaldos sólida para tus datos críticos usando Bacula.",
+            "url": "https://promos.apprendiendo.net/bacula-respaldos/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.7",
+              "ratingCount": "340",
+              "bestRating": "5"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "Course",
+            "name": "OCS: Gestión de inventario profesional",
+            "description": "Lleva el inventario tecnológico de tu empresa con OCS de forma profesional y centralizada.",
+            "url": "https://promos.apprendiendo.net/ocs-inventario/",
+            "provider": {
+              "@id": "https://promos.apprendiendo.net/#instructor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-05-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.7",
+              "ratingCount": "280",
+              "bestRating": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Obtengo certificado de finalización?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, al completar cada curso Udemy emite un certificado de finalización."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura la promoción?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las promociones y cupones cambian con frecuencia. Te recomendamos aprovechar el precio actual desde esta página."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto soporte recibo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El instructor responde personalmente las consultas relacionadas con el contenido de cada curso, aportando contexto de proyectos reales."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <!-- Google tag (gtag.js) -->
@@ -255,16 +421,25 @@
 
   <link rel="preload" as="image" href="imagenes/fortinet.webp" fetchpriority="high" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-  />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" /></noscript>
-
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin />
+  <style>
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: optional;
+      src: url("/fonts/inter-latin.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: optional;
+      src: url("/fonts/inter-latin-ext.woff2") format("woff2");
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+  </style>
   <style>
     :root {
       --bg: #050816;
@@ -487,13 +662,6 @@
       display: flex;
       flex-direction: column;
     }
-
-    #hero        { order: 1; }
-    #cursos      { order: 2; }
-    #beneficios  { order: 3; }
-    #testimonios { order: 4; }
-    #sobre-mi    { order: 5; }
-
     section {
       padding: 3.5rem 1.25rem;
     }
@@ -1566,7 +1734,7 @@
           <div class="hero-metrics">
             <div class="metric">
               <div class="metric-label">Estudiantes satisfechos</div>
-              <div class="metric-value">90.000+</div>
+              <div class="metric-value">100.000+</div>
             </div>
             <div class="metric">
               <div class="metric-label">Aprobación promedio</div>
@@ -1609,7 +1777,569 @@
           </div>
         </aside>
       </div>
+    </section><!-- Cursos -->
+    <section id="cursos">
+      <div class="section-inner">
+        <div class="courses-header-row">
+          <div class="section-header" style="margin-bottom:0;">
+            <div class="section-eyebrow">Cursos</div>
+            <h2 class="section-title">Nuestros cursos profesionales</h2>
+            <p class="section-subtitle">
+              Elegí el camino que más potencie tu carrera: seguridad, redes, DevOps, infraestructura o gestión de costos en la nube.
+            </p>
+          </div>
+          <div class="courses-filter">
+            <button class="filter-chip active" data-filter="all" aria-pressed="true">
+              <span class="dot"></span>
+              Todos (12)
+            </button>
+            <button class="filter-chip" data-filter="fortinet" aria-pressed="false">
+              <span class="dot"></span>
+              Fortinet (4)
+            </button>
+            <button class="filter-chip" data-filter="mikrotik" aria-pressed="false">
+              <span class="dot"></span>
+              Mikrotik (2)
+            </button>
+            <button class="filter-chip" data-filter="devops" aria-pressed="false">
+              <span class="dot"></span>
+              DevOps (2)
+            </button>
+            <button class="filter-chip" data-filter="infrastructure" aria-pressed="false">
+              <span class="dot"></span>
+              Infraestructura (3)
+            </button>
+            <button class="filter-chip" data-filter="finops" aria-pressed="false">
+              <span class="dot"></span>
+              FinOps (1)
+            </button>
+          </div>
+        </div>
+
+        <div class="courses-grid" id="courses-grid">
+          <!-- Fortinet 7.x -->
+          <article class="course-card" data-category="fortinet">
+            <div class="course-image-wrapper">
+              <img src="imagenes/fortinet.webp" alt="Curso de Fortinet 7.x en español con laboratorios prácticos para certificación FCP" class="course-image" loading="eager" fetchpriority="high" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill highlight">Bestseller</span>
+              <span class="course-category">Fortinet · Seguridad de red</span>
+            </div>
+            <h3 class="course-title">Fortinet 7.x De principiante a experto</h3>
+            <p class="course-description">
+              Curso 100% práctico con laboratorios para preparar y aprobar el examen core FCP. Domina FortiGate en entornos empresariales.
+            </p>
+            <div class="course-meta">
+              <span>⚙︎ Nivel: Intermedio / Avanzado</span>
+              <span>📚 Preparación FCP</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Ahorro 90%+</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_fortinet_7x"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/fortinet-7-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fortinet NSE7 SD-WAN -->
+          <article class="course-card" data-category="fortinet">
+            <div class="course-image-wrapper">
+              <img src="imagenes/nse7.webp" alt="Curso Fortinet NSE7 SD-WAN en español para certificación FCSS con laboratorios reales" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill highlight">Highest Rated</span>
+              <span class="course-category">Fortinet · SD-WAN</span>
+            </div>
+            <h3 class="course-title">Fortinet NSE7: Certificación SD-WAN</h3>
+            <p class="course-description">
+              Curso orientado al examen NSE7 de la certificación FCSS con laboratorios descargables para dominar SD-WAN empresarial.
+            </p>
+            <div class="course-meta">
+              <span>📈 Enfoque: SD-WAN Empresarial</span>
+              <span>🎯 Certificación avanzada</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Curso avanzado</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/nse7-sdwan/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_fortinet_nse7"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/fortinet-nse7-sdwan/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mikrotik básico -->
+          <article class="course-card" data-category="mikrotik">
+            <div class="course-image-wrapper">
+              <img src="imagenes/mikrotik.webp" alt="Curso de MikroTik en español desde cero con laboratorios en GNS3 y VMware" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill highlight">Bestseller</span>
+              <span class="course-category">Mikrotik · Redes</span>
+            </div>
+            <h3 class="course-title">Mikrotik: de principiante a experto</h3>
+            <p class="course-description">
+              Desde la configuración inicial hasta escenarios avanzados para dominar routers Mikrotik con laboratorios en tu propia PC.
+            </p>
+            <div class="course-meta">
+              <span>💻 Ideal para admins de red</span>
+              <span>🧪 Laboratorios descargables</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 14.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Pack completo</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/mikrotik-de-principiante-a-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_mikrotik_basico"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/mikrotik-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mikrotik avanzado -->
+          <article class="course-card" data-category="mikrotik">
+            <div class="course-image-wrapper">
+              <img src="imagenes/mikrotik-avanzado.webp" alt="Curso avanzado de MikroTik en español: troubleshooting y casos complejos de red" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill">Advanced</span>
+              <span class="course-category">Mikrotik · Casos avanzados</span>
+            </div>
+            <h3 class="course-title">Mikrotik: prácticas avanzadas</h3>
+            <p class="course-description">
+              Configuraciones avanzadas y troubleshooting real para llevar tus habilidades Mikrotik al siguiente nivel.
+            </p>
+            <div class="course-meta">
+              <span>🧠 Escenarios complejos</span>
+              <span>🛠 Troubleshooting</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Para usuarios con base previa</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/mikrotik-practicas-de-un-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_mikrotik_avanzado"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/mikrotik-avanzado/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Terraform -->
+          <article class="course-card" data-category="devops">
+            <div class="course-image-wrapper">
+              <img src="imagenes/terraform.webp" alt="Curso de Terraform en español para la certificación HashiCorp Certified: Terraform Associate" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill highlight">Bestseller</span>
+              <span class="course-category">DevOps · IaC</span>
+            </div>
+            <h3 class="course-title">Terraform de principiante a certificado</h3>
+            <p class="course-description">
+              Aprende todo lo necesario para aprobar la certificación de Terraform y da un paso adelante en tu carrera como DevOps.
+            </p>
+            <div class="course-meta">
+              <span>🧱 Infraestructura como código</span>
+              <span>🎯 Certificación oficial</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Muy recomendado</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/hashicorp-terraform/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_terraform"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/terraform-principiante-certificado/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- WSL -->
+          <article class="course-card" data-category="devops">
+            <div class="course-image-wrapper">
+              <img src="imagenes/wsl.webp" alt="Curso de WSL2 (Windows Subsystem for Linux) en español para devs y DevOps" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill">Essential</span>
+              <span class="course-category">DevOps · Herramientas</span>
+            </div>
+            <h3 class="course-title">WSL en menos de 2 horas</h3>
+            <p class="course-description">
+              Domina Windows Subsystem for Linux para potenciar tu entorno de desarrollo y DevOps sin sacrificar recursos.
+            </p>
+            <div class="course-meta">
+              <span>⚡ Setup rápido</span>
+              <span>💻 Ideal para devs y DevOps</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Curso corto e intenso</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/wsl2-mestria-en-2-horas/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_wsl"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/wsl-2-horas/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FortiAnalyzer -->
+          <article class="course-card" data-category="fortinet">
+            <div class="course-image-wrapper">
+              <img src="imagenes/fortianalyzer.webp" alt="Curso de FortiAnalyzer en español para SOC y análisis de logs de seguridad" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill highlight">Highest Rated</span>
+              <span class="course-category">Fortinet · Logging & Reporting</span>
+            </div>
+            <h3 class="course-title">FortiAnalyzer de principiante a experto</h3>
+            <p class="course-description">
+              Domina la instalación, administración y analítica de eventos de seguridad con FortiAnalyzer.
+            </p>
+            <div class="course-meta">
+              <span>📊 Logging & reporting</span>
+              <span>🎯 Preparación examen FAZ</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Clave para SOC / SecOps</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_fortianalyzer"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/fortianalyzer-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FortiManager -->
+          <article class="course-card" data-category="fortinet">
+            <div class="course-image-wrapper">
+              <img src="imagenes/fortimanager.webp" alt="Curso de FortiManager en español para gestión centralizada de Fortinet" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill highlight">Bestseller</span>
+              <span class="course-category">Fortinet · Gestión centralizada</span>
+            </div>
+            <h3 class="course-title">FortiManager de principiante a experto</h3>
+            <p class="course-description">
+              Aprende a administrar múltiples equipos Fortinet de forma centralizada con FortiManager.
+            </p>
+            <div class="course-meta">
+              <span>🏢 Gestión multi-equipo</span>
+              <span>🎯 Preparación examen FMG</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Imprescindible para grandes entornos</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/fortimanager/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_fortimanager"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/fortimanager-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nagios -->
+          <article class="course-card" data-category="infrastructure">
+            <div class="course-image-wrapper">
+              <img src="imagenes/nagios.webp" alt="Curso de Nagios en español para monitoreo de infraestructura empresarial" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill">Popular</span>
+              <span class="course-category">Infrastructure · Monitoreo</span>
+            </div>
+            <h3 class="course-title">Nagios: El estándar en monitoreo</h3>
+            <p class="course-description">
+              Aprende de manera práctica cómo montar y programar al máximo esta herramienta de observabilidad para tu infraestructura.
+            </p>
+            <div class="course-meta">
+              <span>📡 Observabilidad</span>
+              <span>🏢 Monitoreo empresarial</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Implementaciones escalables</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_nagios"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/nagios-monitoreo/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bacula -->
+          <article class="course-card" data-category="infrastructure">
+            <div class="course-image-wrapper">
+              <img src="imagenes/bacula.webp" alt="Curso de Bacula en español para respaldos empresariales, DRP y backup en AWS S3" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill">Backups & DR</span>
+              <span class="course-category">Infrastructure · Respaldo</span>
+            </div>
+            <h3 class="course-title">Bacula: Solución de respaldos empresarial</h3>
+            <p class="course-description">
+              Diseña y opera una solución de respaldos sólida para tus datos críticos usando Bacula.
+            </p>
+            <div class="course-meta">
+              <span>💾 Backups y recuperación</span>
+              <span>🏥 Alta criticidad</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Clave para planes de DRP</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/curso-bacula/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_bacula"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/bacula-respaldos/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- OCS -->
+          <article class="course-card" data-category="infrastructure">
+            <div class="course-image-wrapper">
+              <img src="imagenes/ocs.webp" alt="Curso de OCS Inventory en español para gestión de inventario IT y GLPI" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill">IT Assets</span>
+              <span class="course-category">Infrastructure · Inventario</span>
+            </div>
+            <h3 class="course-title">OCS: Gestión de inventario profesional</h3>
+            <p class="course-description">
+              Lleva el inventario tecnológico de tu empresa con OCS de forma profesional y centralizada.
+            </p>
+            <div class="course-meta">
+              <span>🧾 Gestión de activos</span>
+              <span>🏢 Inventario IT</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Complemento para infra</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/ocs-gestion-de-inventario-profesional/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_ocs"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/ocs-inventario/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FinOps -->
+          <article class="course-card" data-category="finops">
+            <div class="course-image-wrapper">
+              <img src="imagenes/finops.webp" alt="Curso FinOps Practitioner FOCP en español para certificación FinOps Foundation" class="course-image" loading="lazy" />
+            </div>
+            <div class="course-label-row">
+              <span class="course-pill">FinOps</span>
+              <span class="course-category">Cloud · Cost Management</span>
+            </div>
+            <h3 class="course-title">FinOps Practitioner FOCP</h3>
+            <p class="course-description">
+              Gestiona eficientemente los costos en la nube y prepárate para la certificación FOCP con un enfoque práctico.
+            </p>
+            <div class="course-meta">
+              <span>💰 Optimización de costos</span>
+              <span>☁️ Cloud economics</span>
+            </div>
+            <div class="course-hint" style="margin-bottom:0.25rem;">
+              <span style="color:var(--text-mute);font-size:0.78rem;">🎙️ Instructor invitado: Gustavo Lambolay</span>
+            </div>
+            <div class="course-price-row">
+              <div>
+                <div class="course-price-current">U$S 12.99</div>
+                <div class="course-price-original">Antes U$S 149.99</div>
+              </div>
+              <div class="course-badge">Clave para equipos FinOps</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-cta">
+                <a
+                  href="https://www.udemy.com/course/aprende-certifica-finops-practitioner-focp-en-espanolingles/?couponCode=FINOPS&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  data-ga-label="curso_finops"
+                >
+                  Ver curso en Udemy →
+                </a>
+              </div>
+              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
+              <div class="course-hint">
+                <a href="/finops-focp/" style="color:var(--accent-3);">Ver detalles del curso</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
+
+    
 
 
     <!-- Beneficios -->
@@ -1821,574 +2551,12 @@
       </div>
     </section>
 
-    <!-- Cursos -->
-    <section id="cursos">
-      <div class="section-inner">
-        <div class="courses-header-row">
-          <div class="section-header" style="margin-bottom:0;">
-            <div class="section-eyebrow">Cursos</div>
-            <h2 class="section-title">Nuestros cursos profesionales</h2>
-            <p class="section-subtitle">
-              Elegí el camino que más potencie tu carrera: seguridad, redes, DevOps, infraestructura o gestión de costos en la nube.
-            </p>
-          </div>
-          <div class="courses-filter">
-            <button class="filter-chip active" data-filter="all">
-              <span class="dot"></span>
-              Todos (12)
-            </button>
-            <button class="filter-chip" data-filter="fortinet">
-              <span class="dot"></span>
-              Fortinet (4)
-            </button>
-            <button class="filter-chip" data-filter="mikrotik">
-              <span class="dot"></span>
-              Mikrotik (2)
-            </button>
-            <button class="filter-chip" data-filter="devops">
-              <span class="dot"></span>
-              DevOps (2)
-            </button>
-            <button class="filter-chip" data-filter="infrastructure">
-              <span class="dot"></span>
-              Infraestructura (3)
-            </button>
-            <button class="filter-chip" data-filter="finops">
-              <span class="dot"></span>
-              FinOps (1)
-            </button>
-          </div>
-        </div>
-
-        <div class="courses-grid" id="courses-grid">
-          <!-- Fortinet 7.x -->
-          <article class="course-card" data-category="fortinet">
-            <div class="course-image-wrapper">
-              <img src="imagenes/fortinet.webp" alt="Fortinet 7.x de principiante a experto" class="course-image" loading="eager" fetchpriority="high" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill highlight">Bestseller</span>
-              <span class="course-category">Fortinet · Seguridad de red</span>
-            </div>
-            <h3 class="course-title">Fortinet 7.x De principiante a experto</h3>
-            <p class="course-description">
-              Curso 100% práctico con laboratorios para preparar y aprobar el examen core FCP. Domina FortiGate en entornos empresariales.
-            </p>
-            <div class="course-meta">
-              <span>⚙︎ Nivel: Intermedio / Avanzado</span>
-              <span>📚 Preparación FCP</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Ahorro 90%+</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/fortinet-7-de-principiante-a-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_fortinet_7x"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/fortinet-7-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Fortinet NSE7 SD-WAN -->
-          <article class="course-card" data-category="fortinet">
-            <div class="course-image-wrapper">
-              <img src="imagenes/nse7.webp" alt="Fortinet NSE7: Certificación SD-WAN" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill highlight">Highest Rated</span>
-              <span class="course-category">Fortinet · SD-WAN</span>
-            </div>
-            <h3 class="course-title">Fortinet NSE7: Certificación SD-WAN</h3>
-            <p class="course-description">
-              Curso orientado al examen NSE7 de la certificación FCSS con laboratorios descargables para dominar SD-WAN empresarial.
-            </p>
-            <div class="course-meta">
-              <span>📈 Enfoque: SD-WAN Empresarial</span>
-              <span>🎯 Certificación avanzada</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Curso avanzado</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/nse7-sdwan/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_fortinet_nse7"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/fortinet-nse7-sdwan/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Mikrotik básico -->
-          <article class="course-card" data-category="mikrotik">
-            <div class="course-image-wrapper">
-              <img src="imagenes/mikrotik.webp" alt="Mikrotik: de principiante a experto" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill highlight">Bestseller</span>
-              <span class="course-category">Mikrotik · Redes</span>
-            </div>
-            <h3 class="course-title">Mikrotik: de principiante a experto</h3>
-            <p class="course-description">
-              Desde la configuración inicial hasta escenarios avanzados para dominar routers Mikrotik con laboratorios en tu propia PC.
-            </p>
-            <div class="course-meta">
-              <span>💻 Ideal para admins de red</span>
-              <span>🧪 Laboratorios descargables</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 14.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Pack completo</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/mikrotik-de-principiante-a-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_mikrotik_basico"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/mikrotik-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Mikrotik avanzado -->
-          <article class="course-card" data-category="mikrotik">
-            <div class="course-image-wrapper">
-              <img src="imagenes/mikrotik-avanzado.webp" alt="Mikrotik: prácticas avanzadas" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill">Advanced</span>
-              <span class="course-category">Mikrotik · Casos avanzados</span>
-            </div>
-            <h3 class="course-title">Mikrotik: prácticas avanzadas</h3>
-            <p class="course-description">
-              Configuraciones avanzadas y troubleshooting real para llevar tus habilidades Mikrotik al siguiente nivel.
-            </p>
-            <div class="course-meta">
-              <span>🧠 Escenarios complejos</span>
-              <span>🛠 Troubleshooting</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Para usuarios con base previa</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/mikrotik-practicas-de-un-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_mikrotik_avanzado"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/mikrotik-avanzado/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Terraform -->
-          <article class="course-card" data-category="devops">
-            <div class="course-image-wrapper">
-              <img src="imagenes/terraform.webp" alt="Terraform de principiante a certificado" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill highlight">Bestseller</span>
-              <span class="course-category">DevOps · IaC</span>
-            </div>
-            <h3 class="course-title">Terraform de principiante a certificado</h3>
-            <p class="course-description">
-              Aprende todo lo necesario para aprobar la certificación de Terraform y da un paso adelante en tu carrera como DevOps.
-            </p>
-            <div class="course-meta">
-              <span>🧱 Infraestructura como código</span>
-              <span>🎯 Certificación oficial</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Muy recomendado</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/hashicorp-terraform/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_terraform"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/terraform-principiante-certificado/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- WSL -->
-          <article class="course-card" data-category="devops">
-            <div class="course-image-wrapper">
-              <img src="imagenes/wsl.webp" alt="WSL en menos de 2 horas" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill">Essential</span>
-              <span class="course-category">DevOps · Herramientas</span>
-            </div>
-            <h3 class="course-title">WSL en menos de 2 horas</h3>
-            <p class="course-description">
-              Domina Windows Subsystem for Linux para potenciar tu entorno de desarrollo y DevOps sin sacrificar recursos.
-            </p>
-            <div class="course-meta">
-              <span>⚡ Setup rápido</span>
-              <span>💻 Ideal para devs y DevOps</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Curso corto e intenso</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/wsl2-mestria-en-2-horas/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_wsl"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/wsl-2-horas/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- FortiAnalyzer -->
-          <article class="course-card" data-category="fortinet">
-            <div class="course-image-wrapper">
-              <img src="imagenes/fortianalyzer.webp" alt="FortiAnalyzer de principiante a experto" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill highlight">Highest Rated</span>
-              <span class="course-category">Fortinet · Logging & Reporting</span>
-            </div>
-            <h3 class="course-title">FortiAnalyzer de principiante a experto</h3>
-            <p class="course-description">
-              Domina la instalación, administración y analítica de eventos de seguridad con FortiAnalyzer.
-            </p>
-            <div class="course-meta">
-              <span>📊 Logging & reporting</span>
-              <span>🎯 Preparación examen FAZ</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Clave para SOC / SecOps</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/fortianalyzer-de-principiante-a-experto/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_fortianalyzer"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/fortianalyzer-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- FortiManager -->
-          <article class="course-card" data-category="fortinet">
-            <div class="course-image-wrapper">
-              <img src="imagenes/fortimanager.webp" alt="FortiManager de principiante a experto" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill highlight">Bestseller</span>
-              <span class="course-category">Fortinet · Gestión centralizada</span>
-            </div>
-            <h3 class="course-title">FortiManager de principiante a experto</h3>
-            <p class="course-description">
-              Aprende a administrar múltiples equipos Fortinet de forma centralizada con FortiManager.
-            </p>
-            <div class="course-meta">
-              <span>🏢 Gestión multi-equipo</span>
-              <span>🎯 Preparación examen FMG</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Imprescindible para grandes entornos</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/fortimanager/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_fortimanager"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/fortimanager-principiante-experto/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Nagios -->
-          <article class="course-card" data-category="infrastructure">
-            <div class="course-image-wrapper">
-              <img src="imagenes/nagios.webp" alt="Nagios: El estándar en monitoreo" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill">Popular</span>
-              <span class="course-category">Infrastructure · Monitoreo</span>
-            </div>
-            <h3 class="course-title">Nagios: El estándar en monitoreo</h3>
-            <p class="course-description">
-              Aprende de manera práctica cómo montar y programar al máximo esta herramienta de observabilidad para tu infraestructura.
-            </p>
-            <div class="course-meta">
-              <span>📡 Observabilidad</span>
-              <span>🏢 Monitoreo empresarial</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Implementaciones escalables</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_nagios"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/nagios-monitoreo/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Bacula -->
-          <article class="course-card" data-category="infrastructure">
-            <div class="course-image-wrapper">
-              <img src="imagenes/bacula.webp" alt="Bacula: Solución de respaldos empresarial" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill">Backups & DR</span>
-              <span class="course-category">Infrastructure · Respaldo</span>
-            </div>
-            <h3 class="course-title">Bacula: Solución de respaldos empresarial</h3>
-            <p class="course-description">
-              Diseña y opera una solución de respaldos sólida para tus datos críticos usando Bacula.
-            </p>
-            <div class="course-meta">
-              <span>💾 Backups y recuperación</span>
-              <span>🏥 Alta criticidad</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Clave para planes de DRP</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/curso-bacula/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_bacula"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/bacula-respaldos/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- OCS -->
-          <article class="course-card" data-category="infrastructure">
-            <div class="course-image-wrapper">
-              <img src="imagenes/ocs.webp" alt="OCS: Gestión de inventario profesional" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill">IT Assets</span>
-              <span class="course-category">Infrastructure · Inventario</span>
-            </div>
-            <h3 class="course-title">OCS: Gestión de inventario profesional</h3>
-            <p class="course-description">
-              Lleva el inventario tecnológico de tu empresa con OCS de forma profesional y centralizada.
-            </p>
-            <div class="course-meta">
-              <span>🧾 Gestión de activos</span>
-              <span>🏢 Inventario IT</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Complemento para infra</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/ocs-gestion-de-inventario-profesional/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_ocs"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/ocs-inventario/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- FinOps -->
-          <article class="course-card" data-category="finops">
-            <div class="course-image-wrapper">
-              <img src="imagenes/finops.webp" alt="FinOps Practitioner FOCP" class="course-image" loading="lazy" />
-            </div>
-            <div class="course-label-row">
-              <span class="course-pill">FinOps</span>
-              <span class="course-category">Cloud · Cost Management</span>
-            </div>
-            <h3 class="course-title">FinOps Practitioner FOCP</h3>
-            <p class="course-description">
-              Gestiona eficientemente los costos en la nube y prepárate para la certificación FOCP con un enfoque práctico.
-            </p>
-            <div class="course-meta">
-              <span>💰 Optimización de costos</span>
-              <span>☁️ Cloud economics</span>
-            </div>
-            <div class="course-hint" style="margin-bottom:0.25rem;">
-              <span style="color:var(--text-mute);font-size:0.78rem;">🎙️ Instructor invitado: Gustavo Lambolay</span>
-            </div>
-            <div class="course-price-row">
-              <div>
-                <div class="course-price-current">U$S 12.99</div>
-                <div class="course-price-original">Antes U$S 149.99</div>
-              </div>
-              <div class="course-badge">Clave para equipos FinOps</div>
-            </div>
-            <div class="course-footer">
-              <div class="course-cta">
-                <a
-                  href="https://www.udemy.com/course/aprende-certifica-finops-practitioner-focp-en-espanolingles/?couponCode=FINOPS&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  data-ga-label="curso_finops"
-                >
-                  Ver curso en Udemy →
-                </a>
-              </div>
-              <p class="coupon-note">✅ Descuento aplicado automáticamente al hacer clic</p>
-              <div class="course-hint">
-                <a href="/finops-focp/" style="color:var(--accent-3);">Ver detalles del curso</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- Instructor / Branding personal -->
     <section id="sobre-mi">
       <div class="section-inner instructor-grid">
         <h2 class="visually-hidden">Sobre el instructor</h2>
         <div class="instructor-card">
-          <img src="imagenes/instructor.webp" alt="Eduardo Nazareno Anselmi" class="instructor-avatar" style="object-fit:cover;" />
+          <img src="imagenes/instructor.webp" alt="Eduardo Nazareno Anselmi — instructor de Apprendiendo: Cloud Architect & Network Engineer" class="instructor-avatar" style="object-fit:cover;" />
           <div class="instructor-name">Eduardo Nazareno Anselmi</div>
           <div class="instructor-role">
             Ingeniero en Sistemas · Cloud Architect & Network Engineer
@@ -2423,7 +2591,7 @@
           <div class="instructor-stats">
             <div>
               <div class="instructor-stat-label">Alumnos en Udemy</div>
-              <div class="instructor-stat-value">90.000+ estudiantes</div>
+              <div class="instructor-stat-value">100.000+ estudiantes</div>
             </div>
             <div>
               <div class="instructor-stat-label">Experiencia profesional</div>
@@ -2581,8 +2749,12 @@
 
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", function () {
-      filterButtons.forEach((b) => b.classList.remove("active"));
+      filterButtons.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-pressed", "false");
+      });
       this.classList.add("active");
+      this.setAttribute("aria-pressed", "true");
       const filter = this.getAttribute("data-filter");
       applyFilter(filter);
     });
@@ -2601,8 +2773,12 @@
         // Activar filtro correspondiente
         const btn = document.querySelector('.filter-chip[data-filter="' + filter + '"]');
         if (btn) {
-          filterButtons.forEach((b) => b.classList.remove("active"));
+          filterButtons.forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-pressed", "false");
+          });
           btn.classList.add("active");
+          btn.setAttribute("aria-pressed", "true");
           applyFilter(filter);
         }
       }
