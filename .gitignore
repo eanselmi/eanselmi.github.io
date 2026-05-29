@@ -7,3 +7,78 @@ terraform.tfstate*
 .tflint.hcl
 imagenes/preview promo site.tif
 CLAUDE.md
+AUDITORIA.md
+
+# Documentos sensibles (auditorías, notas internas, planificación)
+AUDITORIA*.md
+NOTAS*.md
+INTERNO*.md
+*.private.md
+
+# Herramientas locales (IDE/editor/agentes)
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backups y temporales
+*.bak
+*.tmp
+*.orig
+Thumbs.db
+
+# Formatos no-web que no deben servirse públicamente
+*.tif
+*.tiff
+*.psd
+*.sketch
+*.xcf
+
+# Builds / dependencias (en caso de agregar tooling)
+node_modules/
+dist/
+build/
+.cache/
+.vercel/
+.next/
+
+# Logs y entornos
+*.log
+.env
+.env.*
+
+# Carpetas de campañas inactivas
+imagenes/BF/
+
+# Imágenes originales .jpg de cursos: ya hay versión .webp activa.
+# Mantener solo lo que el HTML referencia evita servir duplicados pesados.
+imagenes/bacula.jpg
+imagenes/finops.jpg
+imagenes/fortianalyzer.jpg
+imagenes/fortimanager.jpg
+imagenes/fortinet.jpg
+imagenes/instructor.jpg
+imagenes/mikrotik-avanzado.jpg
+imagenes/mikrotik.jpg
+imagenes/nagios.jpg
+imagenes/nse7.jpg
+imagenes/ocs.jpg
+imagenes/terraform.jpg
+imagenes/wsl.jpg
+
+# Fondos de hero / previews / campañas estacionales sin uso en código.
+imagenes/fondo.jpg
+imagenes/fondo-bf.jpg
+imagenes/fondo4.jpg
+imagenes/fondo5.jpg
+imagenes/fondo6.jpg
+imagenes/blackfriday.png
+imagenes/fiestas.jpg
+imagenes/pascuas.jpg
+imagenes/wsl-free.jpg
+imagenes/imagen_previa_promos.jpg
+imagenes/apprendiendo.jpg
+imagenes/apprendiendologo.png
+imagenes/nnagios.jpg

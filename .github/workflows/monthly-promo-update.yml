@@ -36,10 +36,13 @@ jobs:
           echo "DEADLINE=$DEADLINE"   >> $GITHUB_ENV
           echo "TODAY=$TODAY"         >> $GITHUB_ENV
 
-      - name: Update coupon codes in index.html
+      - name: Update coupon codes in index.html and subpages
         run: |
-          # Reemplaza solo patrones mes+año (ej: MAR2026). No toca cupones como FINOPS.
-          sed -i -E "s/couponCode=[A-Z]{2,6}[0-9]{4}/couponCode=${COUPON}/g" index.html
+          # El patrón [A-Z]{2,6}[0-9]{4} matchea cupones MES+AÑO (ej: MAY2026).
+          # Cupones fijos como FINOPS no son tocados.
+          # Actualiza tanto el querystring couponCode= como el texto visible <strong>MES+AÑO</strong>.
+          sed -i -E "s/couponCode=[A-Z]{2,6}[0-9]{4}/couponCode=${COUPON}/g" index.html */index.html
+          sed -i -E "s|<strong>[A-Z]{2,6}[0-9]{4}</strong>|<strong>${COUPON}</strong>|g" index.html */index.html
 
       - name: Update countdown deadline in index.html
         run: |
@@ -53,6 +56,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html sitemap.xml
+          git add index.html */index.html sitemap.xml
           git diff --cached --quiet && echo "Sin cambios detectados" || \
             git commit -m "$(date +'%B %Y') promo update" && git push

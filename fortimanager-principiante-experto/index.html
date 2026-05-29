@@ -35,7 +35,7 @@
       "url": "https://www.linkedin.com/in/nazareno-anselmi/"
     },
     "offers": { "@type": "Offer", "price": "12.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "bestRating": "5", "ratingCount": "150" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "bestRating": "5", "ratingCount": "780" },
     "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online" }
   }
   </script>
@@ -210,7 +210,7 @@
         <span>Apprendiendo.net</span>
       </a>
       <a href="/" class="nav-back">← Ver todos los cursos</a>
-      <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAR2026"
+      <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_fortimanager-principiante-experto"
          target="_blank" rel="noopener noreferrer" class="btn btn-primary">
         Inscribirme ahora →
       </a>
@@ -252,7 +252,7 @@
           </div>
 
           <div class="hero-actions">
-            <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAR2026"
+            <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_fortimanager-principiante-experto"
                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">
               Inscribirme con descuento →
             </a>
@@ -275,7 +275,7 @@
                 <div class="sticky-price-original">U$S 149.99</div>
                 <div class="sticky-discount">91% OFF</div>
               </div>
-              <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAR2026"
+              <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_fortimanager-principiante-experto"
                  target="_blank" rel="noopener noreferrer"
                  class="btn btn-primary" style="width:100%;justify-content:center;">
                 Inscribirme ahora →
@@ -289,7 +289,7 @@
                 <li>🔄 Actualizaciones incluidas</li>
               </ul>
               <div class="sticky-coupon">
-                Cupón aplicado automáticamente: <strong>MAR2026</strong><br>
+                Cupón aplicado automáticamente: <strong>MAY2026</strong><br>
                 <span style="font-size:0.75rem;">El precio puede variar si accedés desde otro link.</span>
               </div>
               <div class="sticky-guarantee">30 días de garantía de devolución de Udemy</div>
@@ -437,7 +437,7 @@
           <h2>¿Listo para dominar FortiManager?</h2>
           <p>Acceso de por vida, laboratorio GNS3 completo y soporte directo del instructor. El precio promocional es por tiempo limitado.</p>
           <div style="display:flex;gap:0.8rem;flex-wrap:wrap;justify-content:center;">
-            <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAR2026"
+            <a href="https://www.udemy.com/course/fortimanager/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_fortimanager-principiante-experto"
                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">
               Inscribirme por U$S 12.99 →
             </a>
@@ -464,5 +464,20 @@
   </footer>
 
 </div>
+<script>
+  // GA4 enroll_click — clicks salientes a Udemy (marcar como conversión en GA4 admin)
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest && e.target.closest('a[href*="udemy.com/course/"]');
+    if (!link || typeof gtag === "undefined") return;
+    var match = link.href.match(/course\/([^/?]+)/);
+    var slug = match ? match[1] : "unknown";
+    gtag("event", "enroll_click", {
+      event_category: "Affiliate",
+      event_label: slug,
+      source_page: "curso_fortimanager-principiante-experto",
+      transport_type: "beacon"
+    });
+  });
+</script>
 </body>
 </html>
