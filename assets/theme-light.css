@@ -3,6 +3,15 @@
    Activado vía [data-theme="light"] en <html>
    ============================================ */
 
+/* Sección "Temario" en subpáginas — usaba style inline dark hardcoded.
+   Se mueve acá para que el override de light tome efecto. */
+.temario-section {
+  background: radial-gradient(circle at top, #020617 0, #020617 100%);
+}
+[data-theme="light"] .temario-section {
+  background: linear-gradient(180deg, #f5efe6, #fdfaf5);
+}
+
 :root[data-theme="light"] {
   --bg: #fdfaf5;
   --bg-alt: #f5efe6;
