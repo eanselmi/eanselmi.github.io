@@ -1,0 +1,328 @@
+/* ============================================
+   Light mode — Apprendiendo.net
+   Activado vía [data-theme="light"] en <html>
+   ============================================ */
+
+:root[data-theme="light"] {
+  --bg: #fdfaf5;
+  --bg-alt: #f5efe6;
+  --bg-card: #ffffff;
+  --accent: #f97316;
+  --accent-soft: rgba(249, 115, 22, 0.10);
+  --accent-2: #16a34a;
+  --accent-3: #2563eb;
+  --border-subtle: rgba(15, 23, 42, 0.10);
+  --text: #0f172a;
+  --text-soft: #475569;
+  --text-mute: #64748b;
+  --danger: #dc2626;
+  --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.08);
+  --shadow-btn: 0 10px 25px rgba(249, 115, 22, 0.25);
+}
+
+/* ===== Toggle button (works in both modes) ===== */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.55);
+  color: var(--text-soft);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.08);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.theme-toggle .theme-toggle-icon { display: none; }
+.theme-toggle .icon-moon { display: block; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="light"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.18);
+  color: var(--text-soft);
+}
+
+/* ===== Light mode element overrides ===== */
+[data-theme="light"] body {
+  background: radial-gradient(circle at top, #fff8ef 0, #fdfaf5 45%, #f5efe6 100%);
+}
+
+/* Promo bar */
+[data-theme="light"] .promo-bar {
+  background: linear-gradient(90deg, #fff8ef, #fdfaf5);
+  color: #0f172a;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] .promo-pill {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.10);
+  color: var(--text-soft);
+}
+
+/* Header / Nav */
+[data-theme="light"] header {
+  background: rgba(253, 250, 245, 0.88);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] .nav-logo {
+  color: #0f172a;
+}
+[data-theme="light"] .nav-links a:hover {
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.05);
+}
+[data-theme="light"] .nav-back {
+  color: var(--text-soft);
+}
+[data-theme="light"] .nav-back:hover {
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.4);
+  background: rgba(15, 23, 42, 0.05);
+}
+
+/* Botones */
+[data-theme="light"] .btn-ghost {
+  color: var(--text-soft);
+  border-color: rgba(15, 23, 42, 0.22);
+}
+[data-theme="light"] .btn-ghost:hover {
+  border-color: #0f172a;
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.05);
+}
+
+/* Hero (home) */
+[data-theme="light"] .hero-eyebrow {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+[data-theme="light"] .hero-promo-price {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+[data-theme="light"] .hero-right {
+  background:
+    radial-gradient(circle at 0 0, rgba(37, 99, 235, 0.10), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(249, 115, 22, 0.18), transparent 50%),
+    #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+}
+[data-theme="light"] .hero-tag {
+  background: rgba(15, 23, 42, 0.04);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: var(--text-soft);
+}
+[data-theme="light"] .hero-course-list li strong {
+  color: #0f172a;
+}
+[data-theme="light"] .hero-countdown {
+  background: rgba(249, 115, 22, 0.08);
+  border-color: rgba(249, 115, 22, 0.32);
+}
+[data-theme="light"] .countdown-chip {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.15);
+  color: #0f172a;
+}
+
+/* Hero (subpáginas) */
+[data-theme="light"] .hero-price-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+[data-theme="light"] .pill {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: var(--text-soft);
+}
+[data-theme="light"] .course-card-sticky {
+  background: linear-gradient(145deg, #ffffff, #fdfaf5);
+  border-color: rgba(15, 23, 42, 0.10);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] .sticky-coupon {
+  background: rgba(249, 115, 22, 0.08);
+  border-color: rgba(249, 115, 22, 0.4);
+  color: var(--text-soft);
+}
+
+/* Cursos (home) */
+[data-theme="light"] #cursos {
+  background: linear-gradient(180deg, #f5efe6, #fdfaf5);
+}
+[data-theme="light"] .filter-chip {
+  border-color: rgba(15, 23, 42, 0.22);
+  color: var(--text-soft);
+}
+[data-theme="light"] .filter-chip.active {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #ffffff;
+}
+[data-theme="light"] .filter-chip[data-filter="all"] span.dot {
+  background: #0f172a;
+}
+[data-theme="light"] .course-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] .course-image-wrapper {
+  background: #f5efe6;
+}
+[data-theme="light"] .course-pill {
+  background: #f5efe6;
+  border-color: rgba(15, 23, 42, 0.15);
+  color: var(--text-soft);
+}
+[data-theme="light"] .course-pill.highlight {
+  background: rgba(234, 179, 8, 0.15);
+  border-color: rgba(234, 179, 8, 0.55);
+  color: #a16207;
+}
+[data-theme="light"] .off-badge {
+  background: rgba(22, 163, 74, 0.10);
+  border-color: rgba(22, 163, 74, 0.35);
+  color: var(--accent-2);
+}
+
+/* Curriculum & related (subpáginas) */
+[data-theme="light"] .curriculum-item {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+}
+[data-theme="light"] .curriculum-tag {
+  background: #f5efe6;
+  border-color: rgba(15, 23, 42, 0.12);
+  color: var(--text-soft);
+}
+[data-theme="light"] .related-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+}
+[data-theme="light"] .related-card:hover {
+  border-color: var(--accent);
+}
+[data-theme="light"] .related-title {
+  color: #0f172a;
+}
+
+/* Instructor */
+[data-theme="light"] #sobre-mi {
+  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.10), transparent 55%), #fdfaf5;
+}
+[data-theme="light"] .instructor-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+}
+[data-theme="light"] .instructor-band {
+  background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.08), transparent 55%), #fdfaf5;
+}
+[data-theme="light"] .cert-pill {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+}
+
+/* Stats band (subpáginas) */
+[data-theme="light"] .stats-band {
+  background: rgba(255, 255, 255, 0.7);
+  border-top-color: rgba(15, 23, 42, 0.10);
+  border-bottom-color: rgba(15, 23, 42, 0.10);
+}
+
+/* Testimonials (home) */
+[data-theme="light"] #testimonios {
+  background: radial-gradient(circle at top left, rgba(249, 115, 22, 0.06), transparent 50%);
+}
+[data-theme="light"] .testimonial-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.10);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+[data-theme="light"] .testimonial-rating {
+  color: #ca8a04;
+}
+
+/* Community links */
+[data-theme="light"] .community-link {
+  background: rgba(37, 99, 235, 0.08);
+  border-color: rgba(37, 99, 235, 0.28);
+  color: var(--accent-3);
+}
+[data-theme="light"] .community-link:hover {
+  background: rgba(37, 99, 235, 0.15);
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+/* Guarantee / final CTA (home) */
+[data-theme="light"] .guarantee-section {
+  background: radial-gradient(circle at top, rgba(22, 163, 74, 0.18), transparent 55%), #ffffff;
+  border-color: rgba(22, 163, 74, 0.45);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+[data-theme="light"] .guarantee-text {
+  color: #166534;
+}
+[data-theme="light"] .guarantee-list {
+  color: #15803d;
+}
+[data-theme="light"] .guarantee-right-title {
+  color: #166534;
+}
+[data-theme="light"] .faq-list {
+  color: #1e293b;
+}
+[data-theme="light"] .faq-a {
+  color: #475569;
+}
+
+/* Final CTA (subpáginas) */
+[data-theme="light"] .final-cta {
+  background: radial-gradient(circle at center, rgba(249, 115, 22, 0.12), transparent 70%), #ffffff;
+  border-color: rgba(249, 115, 22, 0.35);
+}
+
+/* Footer */
+[data-theme="light"] footer {
+  background: #f5efe6;
+  border-top: 1px solid rgba(15, 23, 42, 0.10);
+}
+[data-theme="light"] .footer-logo {
+  color: #0f172a;
+}
+[data-theme="light"] .footer-links a:hover {
+  color: #0f172a;
+}
+[data-theme="light"] .footer-bottom {
+  border-top-color: rgba(15, 23, 42, 0.10);
+}
+[data-theme="light"] .footer-bottom a:hover {
+  color: #0f172a;
+}
+
+/* Transiciones suaves al cambiar de tema */
+[data-theme="light"] body,
+[data-theme="light"] header,
+[data-theme="light"] .course-card,
+[data-theme="light"] .course-card-sticky,
+[data-theme="light"] .curriculum-item,
+[data-theme="light"] .related-card,
+[data-theme="light"] .testimonial-card,
+[data-theme="light"] .instructor-card,
+[data-theme="light"] .cert-pill,
+[data-theme="light"] .promo-bar,
+[data-theme="light"] footer {
+  transition: background-color 0.3s ease, background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
