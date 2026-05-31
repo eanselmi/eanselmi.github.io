@@ -33,6 +33,20 @@
 html:not([data-lang="en"]) .lang-en { display: none; }
 html[data-lang="en"] .lang-es { display: none; }
 
+/* Grupo de toggles (lang + theme) — siempre viajan juntos a la derecha */
+.promo-bar-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+@media (max-width: 720px) {
+  .promo-bar-actions {
+    margin-left: 0;
+  }
+}
+
 .lang-toggle {
   display: inline-flex;
   align-items: center;
