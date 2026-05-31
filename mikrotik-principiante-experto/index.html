@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <title>Mikrotik: De principiante a experto — Apprendiendo.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script>(function(){try{var t=localStorage.getItem("apprendiendo-theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light");}}catch(e){}})();</script>
+  <script>(function(){try{var t=localStorage.getItem("apprendiendo-theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light");}var l=localStorage.getItem("lang");if(l==="en"){document.documentElement.dataset.lang="en";document.documentElement.setAttribute("lang","en");}}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/theme-light.css" />
   <script src="/assets/theme-toggle.js" defer></script>
+  <script src="/assets/i18n.js" defer></script>
   <!-- Security headers via meta (lo no-posible aquí: HSTS, X-Frame-Options, Permissions-Policy → requieren proxy/CDN delante de GitHub Pages) -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.google-analytics.com; manifest-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -284,6 +285,11 @@
         <span>Precio válido solo con cupón desde esta página</span>
       </div>
       <div class="promo-pill">✅ Soporte directo del instructor · Acceso de por vida</div>
+      <button class="lang-toggle" type="button" aria-label="Switch to English" data-ga-label="lang_toggle">
+        <span class="lang-toggle__es">ES</span>
+        <span class="lang-toggle__sep" aria-hidden="true">|</span>
+        <span class="lang-toggle__en">EN</span>
+      </button>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="false" data-ga-label="theme_toggle">
         <svg class="theme-toggle-icon icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>

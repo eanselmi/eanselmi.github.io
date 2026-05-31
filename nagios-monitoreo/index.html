@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <title>Nagios: El estándar en monitoreo — Apprendiendo.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script>(function(){try{var t=localStorage.getItem("apprendiendo-theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light");}}catch(e){}})();</script>
+  <script>(function(){try{var t=localStorage.getItem("apprendiendo-theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light");}var l=localStorage.getItem("lang");if(l==="en"){document.documentElement.dataset.lang="en";document.documentElement.setAttribute("lang","en");}}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/theme-light.css" />
   <script src="/assets/theme-toggle.js" defer></script>
+  <script src="/assets/i18n.js" defer></script>
   <!-- Security headers via meta (lo no-posible aquí: HSTS, X-Frame-Options, Permissions-Policy → requieren proxy/CDN delante de GitHub Pages) -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.google-analytics.com; manifest-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -266,11 +267,16 @@
 
   <div class="promo-bar">
     <div class="promo-bar-inner">
-      <div class="promo-bar-highlight">🔥 Oferta limitada <span>Acceso completo desde U$S 12.99</span></div>
+      <div class="promo-bar-highlight"><span class="lang-es">🔥 Oferta limitada</span><span class="lang-en">🔥 Limited offer</span> <span><span class="lang-es">Acceso completo desde U$S 12.99</span><span class="lang-en">Full access from US$ 12.99</span></span></div>
       <div style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.8rem;color:var(--text-soft);">
-        <span class="promo-dot"></span><span>Precio válido solo con cupón desde esta página</span>
+        <span class="promo-dot"></span><span><span class="lang-es">Precio válido solo con cupón desde esta página</span><span class="lang-en">Price valid only with the coupon from this page</span></span>
       </div>
-      <div class="promo-pill">✅ Soporte directo del instructor · Acceso de por vida</div>
+      <div class="promo-pill"><span class="lang-es">✅ Soporte directo del instructor · Acceso de por vida</span><span class="lang-en">✅ Direct instructor support · Lifetime access</span></div>
+      <button class="lang-toggle" type="button" aria-label="Switch to English" data-ga-label="lang_toggle">
+        <span class="lang-toggle__es">ES</span>
+        <span class="lang-toggle__sep" aria-hidden="true">|</span>
+        <span class="lang-toggle__en">EN</span>
+      </button>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="false" data-ga-label="theme_toggle">
         <svg class="theme-toggle-icon icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -289,10 +295,10 @@
         <div class="nav-logo-mark">A</div>
         <span>Apprendiendo.net</span>
       </a>
-      <a href="/" class="nav-back">← Ver todos los cursos</a>
+      <a href="/" class="nav-back"><span class="lang-es">← Ver todos los cursos</span><span class="lang-en">← View all courses</span></a>
       <a href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_nagios-monitoreo"
          target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        Inscribirme ahora →
+        <span class="lang-es">Inscribirme ahora →</span><span class="lang-en">Enroll now →</span>
       </a>
     </nav>
   </header>
@@ -303,30 +309,32 @@
       <div class="section-inner hero-grid">
         <div>
           <div class="hero-eyebrow">
-            📡 Infrastructure · <span class="highlight">Nagios Core · Monitoreo · Observabilidad</span>
+            <span class="lang-es">📡 Infrastructure · </span><span class="lang-en">📡 Infrastructure · </span><span class="highlight"><span class="lang-es">Nagios Core · Monitoreo · Observabilidad</span><span class="lang-en">Nagios Core · Monitoring · Observability</span></span>
           </div>
 
           <h1 class="hero-title">
             Nagios:<br>
-            <strong>el estándar en monitoreo</strong>
+            <strong><span class="lang-es">el estándar en monitoreo</span><span class="lang-en">the monitoring standard</span></strong>
           </h1>
 
           <p class="hero-subtitle">
-            Aprendé a montar y configurar Nagios Core desde cero hasta los escenarios más avanzados:
+            <span class="lang-es">Aprendé a montar y configurar Nagios Core desde cero hasta los escenarios más avanzados:
             NRPE, monitoreo de Linux y Windows, notificaciones por email, Telegram y móvil,
-            SNMP, Event Handlers, plugins propios, gráficas con Grafana, mapas Nagvis y monitoreo de VMware ESXi.
+            SNMP, Event Handlers, plugins propios, gráficas con Grafana, mapas Nagvis y monitoreo de VMware ESXi.</span><span class="lang-en">Learn how to deploy and configure Nagios Core from scratch all the way to advanced scenarios:
+            NRPE, Linux and Windows monitoring, email, Telegram and mobile notifications,
+            SNMP, Event Handlers, custom plugins, Grafana dashboards, Nagvis maps and VMware ESXi monitoring.</span>
           </p>
 
           <div class="hero-pills">
-            <span class="pill">📡 Popular</span>
-            <span class="pill">⭐ 4.7 / 5</span>
+            <span class="pill"><span class="lang-es">📡 Popular</span><span class="lang-en">📡 Popular</span></span>
+            <span class="pill"><span class="lang-es">⭐ 4.7 / 5</span><span class="lang-en">⭐ 4.7 / 5</span></span>
             <span class="pill">🎓 Certificado de finalización</span>
             <span class="pill">♾️ Acceso de por vida</span>
-            <span class="pill">🧪 Laboratorio práctico incluido</span>
+            <span class="pill"><span class="lang-es">🧪 Laboratorio práctico incluido</span><span class="lang-en">🧪 Hands-on lab included</span></span>
           </div>
 
           <div class="hero-price-box">
-            <span class="label">Promo especial</span>
+            <span class="label"><span class="lang-es">Promo especial</span><span class="lang-en">Special promo</span></span>
             <span class="original">U$S 149.99</span>
             <span class="promo">U$S 12.99</span>
           </div>
@@ -334,15 +342,15 @@
           <div class="hero-actions">
             <a href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_nagios-monitoreo"
                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">
-              Inscribirme con descuento →
+              <span class="lang-es">Inscribirme con descuento →</span><span class="lang-en">Enroll with discount →</span>
             </a>
-            <a href="#que-vas-a-aprender" class="btn btn-ghost">Ver temario completo</a>
+            <a href="#que-vas-a-aprender" class="btn btn-ghost"><span class="lang-es">Ver temario completo</span><span class="lang-en">See full curriculum</span></a>
           </div>
 
           <div class="hero-supporting">
-            <div class="hero-supporting-item"><span class="dot-blue"></span><span>19 horas de contenido práctico paso a paso</span></div>
-            <div class="hero-supporting-item"><span class="dot-blue"></span><span>Alertas reales: email, Telegram y app móvil</span></div>
-            <div class="hero-supporting-item"><span class="dot-blue"></span><span>Soporte directo de Eduardo, sin intermediarios</span></div>
+            <div class="hero-supporting-item"><span class="dot-blue"></span><span><span class="lang-es">19 horas de contenido práctico paso a paso</span><span class="lang-en">19 hours of step-by-step hands-on content</span></span></div>
+            <div class="hero-supporting-item"><span class="dot-blue"></span><span><span class="lang-es">Alertas reales: email, Telegram y app móvil</span><span class="lang-en">Real-world alerts: email, Telegram and mobile app</span></span></div>
+            <div class="hero-supporting-item"><span class="dot-blue"></span><span><span class="lang-es">Soporte directo de Eduardo, sin intermediarios</span><span class="lang-en">Direct support from Eduardo, no middlemen</span></span></div>
           </div>
         </div>
 
@@ -358,21 +366,21 @@
               <a href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_nagios-monitoreo"
                  target="_blank" rel="noopener noreferrer"
                  class="btn btn-primary" style="width:100%;justify-content:center;">
-                Inscribirme ahora →
+                <span class="lang-es">Inscribirme ahora →</span><span class="lang-en">Enroll now →</span>
               </a>
               <ul class="sticky-features">
-                <li>🧪 Laboratorio práctico con VMs reales</li>
+                <li><span class="lang-es">🧪 Laboratorio práctico con VMs reales</span><span class="lang-en">🧪 Hands-on lab with real VMs</span></li>
                 <li>♾️ Acceso de por vida</li>
-                <li>🎓 Certificado de finalización (Udemy)</li>
-                <li>📱 Acceso desde móvil y PC</li>
-                <li>💬 Soporte directo del instructor</li>
-                <li>🔄 Actualizaciones incluidas</li>
+                <li><span class="lang-es">🎓 Certificado de finalización (Udemy)</span><span class="lang-en">🎓 Certificate of completion (Udemy)</span></li>
+                <li><span class="lang-es">📱 Acceso desde móvil y PC</span><span class="lang-en">📱 Access from mobile and PC</span></li>
+                <li><span class="lang-es">💬 Soporte directo del instructor</span><span class="lang-en">💬 Direct instructor support</span></li>
+                <li><span class="lang-es">🔄 Actualizaciones incluidas</span><span class="lang-en">🔄 Updates included</span></li>
               </ul>
               <div class="sticky-coupon">
-                Cupón aplicado automáticamente: <strong>MAY2026</strong><br>
-                <span style="font-size:0.75rem;">El precio puede variar si accedés desde otro link.</span>
+                <span class="lang-es">Cupón aplicado automáticamente: </span><span class="lang-en">Coupon applied automatically: </span><strong>MAY2026</strong><br>
+                <span style="font-size:0.75rem;"><span class="lang-es">El precio puede variar si accedés desde otro link.</span><span class="lang-en">Price may vary if you access from another link.</span></span>
               </div>
-              <div class="sticky-guarantee">30 días de garantía de devolución de Udemy</div>
+              <div class="sticky-guarantee"><span class="lang-es">30 días de garantía de devolución de Udemy</span><span class="lang-en">30-day Udemy money-back guarantee</span></div>
             </div>
           </div>
         </aside>
@@ -381,73 +389,73 @@
 
     <div class="stats-band">
       <div class="stats-inner">
-        <div><div class="stat-value">100.000+</div><div class="stat-label">Alumnos totales</div></div>
-        <div><div class="stat-value">4.7★</div><div class="stat-label">Calificación promedio</div></div>
-        <div><div class="stat-value">69</div><div class="stat-label">Lecciones</div></div>
-        <div><div class="stat-value">19h 23m</div><div class="stat-label">Duración total</div></div>
-        <div><div class="stat-value">15+ años</div><div class="stat-label">Experiencia del instructor</div></div>
+        <div><div class="stat-value"><span class="lang-es">100.000+</span><span class="lang-en">100,000+</span></div><div class="stat-label"><span class="lang-es">Alumnos totales</span><span class="lang-en">Total students</span></div></div>
+        <div><div class="stat-value">4.7★</div><div class="stat-label"><span class="lang-es">Calificación promedio</span><span class="lang-en">Average rating</span></div></div>
+        <div><div class="stat-value">69</div><div class="stat-label"><span class="lang-es">Lecciones</span><span class="lang-en">Lessons</span></div></div>
+        <div><div class="stat-value">19h 23m</div><div class="stat-label"><span class="lang-es">Duración total</span><span class="lang-en">Total duration</span></div></div>
+        <div><div class="stat-value"><span class="lang-es">15+ años</span><span class="lang-en">15+ years</span></div><div class="stat-label"><span class="lang-es">Experiencia del instructor</span><span class="lang-en">Instructor experience</span></div></div>
       </div>
     </div>
 
     <section id="que-vas-a-aprender">
       <div class="section-inner">
-        <div class="section-eyebrow">Contenido del curso</div>
-        <h2 class="section-title">¿Qué vas a aprender?</h2>
+        <div class="section-eyebrow"><span class="lang-es">Contenido del curso</span><span class="lang-en">Course content</span></div>
+        <h2 class="section-title"><span class="lang-es">¿Qué vas a aprender?</span><span class="lang-en">What you'll learn</span></h2>
         <p class="section-subtitle">
-          Todo lo que necesitás para monitorear tu infraestructura con Nagios Core de forma profesional.
+          <span class="lang-es">Todo lo que necesitás para monitorear tu infraestructura con Nagios Core de forma profesional.</span><span class="lang-en">Everything you need to monitor your infrastructure with Nagios Core like a pro.</span>
         </p>
         <div class="learn-grid">
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Instalar y configurar Nagios Core desde cero en tu laboratorio</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Monitorear hosts y servicios Linux con NRPE</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Monitorear servidores Windows con NSClient++</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Configurar notificaciones por email, Telegram y app móvil</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Monitoreo SNMP: dispositivos de red y servidores</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Event Handlers: respuesta automática ante fallas</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Escribir plugins personalizados en Bash y Python</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Graficar métricas con Nagiosgraph y Grafana</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Crear mapas de infraestructura con Nagvis</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Monitorear VMware ESXi desde Nagios</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Monitorear Bacula (servidor de backups) con Nagios</span></div>
-          <div class="learn-item"><div class="learn-item-dot">✓</div><span>Construir un sistema de monitoreo empresarial completo</span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Instalar y configurar Nagios Core desde cero en tu laboratorio</span><span class="lang-en">Install and configure Nagios Core from scratch in your lab</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Monitorear hosts y servicios Linux con NRPE</span><span class="lang-en">Monitor Linux hosts and services with NRPE</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Monitorear servidores Windows con NSClient++</span><span class="lang-en">Monitor Windows servers with NSClient++</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Configurar notificaciones por email, Telegram y app móvil</span><span class="lang-en">Set up email, Telegram and mobile app notifications</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Monitoreo SNMP: dispositivos de red y servidores</span><span class="lang-en">SNMP monitoring: network devices and servers</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Event Handlers: respuesta automática ante fallas</span><span class="lang-en">Event Handlers: automatic response to failures</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Escribir plugins personalizados en Bash y Python</span><span class="lang-en">Write custom plugins in Bash and Python</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Graficar métricas con Nagiosgraph y Grafana</span><span class="lang-en">Chart metrics with Nagiosgraph and Grafana</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Crear mapas de infraestructura con Nagvis</span><span class="lang-en">Build infrastructure maps with Nagvis</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Monitorear VMware ESXi desde Nagios</span><span class="lang-en">Monitor VMware ESXi from Nagios</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Monitorear Bacula (servidor de backups) con Nagios</span><span class="lang-en">Monitor Bacula (backup server) with Nagios</span></span></div>
+          <div class="learn-item"><div class="learn-item-dot">✓</div><span><span class="lang-es">Construir un sistema de monitoreo empresarial completo</span><span class="lang-en">Build a complete enterprise monitoring system</span></span></div>
         </div>
       </div>
     </section>
 
     <section class="temario-section">
       <div class="section-inner">
-        <div class="section-eyebrow">Temario</div>
-        <h2 class="section-title">Estructura del curso</h2>
-        <p class="section-subtitle">5 secciones que llevan al alumno del laboratorio base al monitoreo avanzado de infraestructura real.</p>
+        <div class="section-eyebrow"><span class="lang-es">Temario</span><span class="lang-en">Curriculum</span></div>
+        <h2 class="section-title"><span class="lang-es">Estructura del curso</span><span class="lang-en">Course structure</span></h2>
+        <p class="section-subtitle"><span class="lang-es">5 secciones que llevan al alumno del laboratorio base al monitoreo avanzado de infraestructura real.</span><span class="lang-en">5 sections that take the student from the base lab to advanced real-infrastructure monitoring.</span></p>
 
         <ul class="curriculum-list">
           <li class="curriculum-item">
             <div class="curriculum-num">01</div>
-            <div class="curriculum-title">Introducción y conceptos de monitoreo con Nagios</div>
-            <span class="curriculum-tag">4 lecciones</span>
+            <div class="curriculum-title"><span class="lang-es">Introducción y conceptos de monitoreo con Nagios</span><span class="lang-en">Introduction and monitoring concepts with Nagios</span></div>
+            <span class="curriculum-tag"><span class="lang-es">4 lecciones</span><span class="lang-en">4 lessons</span></span>
           </li>
           <li class="curriculum-item">
             <div class="curriculum-num">02</div>
-            <div class="curriculum-title">Preparación del laboratorio — VMs, red y entorno de práctica</div>
-            <span class="curriculum-tag">6 lecciones</span>
+            <div class="curriculum-title"><span class="lang-es">Preparación del laboratorio — VMs, red y entorno de práctica</span><span class="lang-en">Lab setup — VMs, networking and practice environment</span></div>
+            <span class="curriculum-tag"><span class="lang-es">6 lecciones</span><span class="lang-en">6 lessons</span></span>
           </li>
           <li class="curriculum-item">
             <div class="curriculum-num">03</div>
-            <div class="curriculum-title">Instalación base de Nagios y primeros monitoreos — hosts, servicios y NRPE</div>
-            <span class="curriculum-tag">15 lecciones</span>
+            <div class="curriculum-title"><span class="lang-es">Instalación base de Nagios y primeros monitoreos — hosts, servicios y NRPE</span><span class="lang-en">Base Nagios installation and first monitoring checks — hosts, services and NRPE</span></div>
+            <span class="curriculum-tag"><span class="lang-es">15 lecciones</span><span class="lang-en">15 lessons</span></span>
           </li>
           <li class="curriculum-item">
             <div class="curriculum-num">04</div>
-            <div class="curriculum-title">Monitoreo avanzado — Windows, SNMP, notificaciones multicanal, Event Handlers, plugins custom, Grafana, Nagvis, ESXi y Bacula</div>
-            <span class="curriculum-tag">42 lecciones</span>
+            <div class="curriculum-title"><span class="lang-es">Monitoreo avanzado — Windows, SNMP, notificaciones multicanal, Event Handlers, plugins custom, Grafana, Nagvis, ESXi y Bacula</span><span class="lang-en">Advanced monitoring — Windows, SNMP, multichannel notifications, Event Handlers, custom plugins, Grafana, Nagvis, ESXi and Bacula</span></div>
+            <span class="curriculum-tag"><span class="lang-es">42 lecciones</span><span class="lang-en">42 lessons</span></span>
           </li>
           <li class="curriculum-item">
             <div class="curriculum-num">05</div>
-            <div class="curriculum-title">Cierre y próximos pasos</div>
+            <div class="curriculum-title"><span class="lang-es">Cierre y próximos pasos</span><span class="lang-en">Wrap-up and next steps</span></div>
             <span class="curriculum-tag">2 lecciones</span>
           </li>
         </ul>
         <p style="margin-top:1rem;font-size:0.82rem;color:var(--text-mute);">
-          5 secciones · 69 lecciones · 19h 23m de contenido en video
+          <span class="lang-es">5 secciones · 69 lecciones · 19h 23m de contenido en video</span><span class="lang-en">5 sections · 69 lessons · 19h 23m of video content</span>
         </p>
       </div>
     </section>
@@ -455,20 +463,22 @@
     <section class="instructor-band">
       <div class="section-inner">
         <div class="section-eyebrow">Instructor</div>
-        <h2 class="section-title">Quién te enseña</h2>
+        <h2 class="section-title"><span class="lang-es">Quién te enseña</span><span class="lang-en">Who will teach you</span></h2>
         <div class="instructor-flex">
           <img src="../imagenes/instructor.webp" alt="Eduardo Nazareno Anselmi — instructor de Apprendiendo: Cloud Architect & Network Engineer" class="instructor-avatar" />
           <div>
             <div class="instructor-name">Eduardo Nazareno Anselmi</div>
-            <div class="instructor-role">Ingeniero en Sistemas · Cloud Architect & Network Engineer</div>
+            <div class="instructor-role"><span class="lang-es">Ingeniero en Sistemas · Cloud Architect & Network Engineer</span><span class="lang-en">Systems Engineer · Cloud Architect & Network Engineer</span></div>
             <p class="instructor-bio">
-              Egresado de la UTN Buenos Aires con más de 15 años de experiencia en infraestructura y redes empresariales.
+              <span class="lang-es">Egresado de la UTN Buenos Aires con más de 15 años de experiencia en infraestructura y redes empresariales.
               Implementé Nagios en producción para monitorear entornos híbridos con cientos de hosts,
-              y diseñé este curso para que puedas construir tu propio sistema de monitoreo completo desde cero.
+              y diseñé este curso para que puedas construir tu propio sistema de monitoreo completo desde cero.</span><span class="lang-en">Graduate of UTN Buenos Aires with 15+ years of experience in enterprise infrastructure and networking.
+              I've deployed Nagios in production to monitor hybrid environments with hundreds of hosts,
+              and I designed this course so you can build your own complete monitoring system from scratch.</span>
             </p>
             <div style="margin-top:1rem;">
               <a href="https://www.linkedin.com/in/nazareno-anselmi/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-                Ver perfil en LinkedIn →
+                <span class="lang-es">Ver perfil en LinkedIn →</span><span class="lang-en">View LinkedIn profile →</span>
               </a>
             </div>
           </div>
@@ -478,19 +488,19 @@
     <!-- Cursos relacionados -->
     <section class="related-courses">
       <div class="section-inner">
-        <div class="section-eyebrow">Continuá aprendiendo</div>
+        <div class="section-eyebrow"><span class="lang-es">Continuá aprendiendo</span><span class="lang-en">Keep learning</span></div>
         <h2 class="section-title">Cursos relacionados</h2>
-        <p class="section-subtitle">Otros cursos que complementan lo que viste hoy.</p>
+        <p class="section-subtitle"><span class="lang-es">Otros cursos que complementan lo que viste hoy.</span><span class="lang-en">More courses that complement what you saw today.</span></p>
         <div class="related-grid">
           <a href="/bacula-respaldos/" class="related-card" data-ga-label="related_bacula-respaldos">
             <div class="related-title">Bacula</div>
-            <div class="related-desc">Respaldos empresariales para tu infraestructura monitoreada.</div>
-            <div class="related-arrow">Ver curso →</div>
+            <div class="related-desc"><span class="lang-es">Respaldos empresariales para tu infraestructura monitoreada.</span><span class="lang-en">Enterprise backups for your monitored infrastructure.</span></div>
+            <div class="related-arrow"><span class="lang-es">Ver curso →</span><span class="lang-en">View course →</span></div>
           </a>
           <a href="/ocs-inventario/" class="related-card" data-ga-label="related_ocs-inventario">
             <div class="related-title">OCS Inventory</div>
-            <div class="related-desc">Inventario IT integrado con tu monitoreo.</div>
-            <div class="related-arrow">Ver curso →</div>
+            <div class="related-desc"><span class="lang-es">Inventario IT integrado con tu monitoreo.</span><span class="lang-en">IT inventory integrated with your monitoring.</span></div>
+            <div class="related-arrow"><span class="lang-es">Ver curso →</span><span class="lang-en">View course →</span></div>
           </a>
         </div>
       </div>
@@ -500,17 +510,17 @@
     <section>
       <div class="section-inner">
         <div class="final-cta">
-          <h2>¿Listo para dominar Nagios?</h2>
-          <p>19 horas de práctica real, alertas multicanal, plugins personalizados y mapas de infraestructura. El precio promocional es por tiempo limitado.</p>
+          <h2><span class="lang-es">¿Listo para dominar Nagios?</span><span class="lang-en">Ready to master Nagios?</span></h2>
+          <p><span class="lang-es">19 horas de práctica real, alertas multicanal, plugins personalizados y mapas de infraestructura. El precio promocional es por tiempo limitado.</span><span class="lang-en">19 hours of real hands-on practice, multichannel alerts, custom plugins and infrastructure maps. The promo price is for a limited time.</span></p>
           <div style="display:flex;gap:0.8rem;flex-wrap:wrap;justify-content:center;">
             <a href="https://www.udemy.com/course/monitoreo-con-nagios/?couponCode=MAY2026&utm_source=apprendiendo&utm_medium=affiliate&utm_campaign=curso_nagios-monitoreo"
                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">
-              Inscribirme por U$S 12.99 →
+              <span class="lang-es">Inscribirme por U$S 12.99 →</span><span class="lang-en">Enroll for US$ 12.99 →</span>
             </a>
-            <a href="/" class="btn btn-ghost">Ver otros cursos</a>
+            <a href="/" class="btn btn-ghost"><span class="lang-es">Ver otros cursos</span><span class="lang-en">View other courses</span></a>
           </div>
           <div style="margin-top:1rem;font-size:0.8rem;color:var(--text-mute);">
-            30 días de garantía de devolución · Sin riesgo
+            <span class="lang-es">30 días de garantía de devolución · Sin riesgo</span><span class="lang-en">30-day money-back guarantee · No risk</span>
           </div>
         </div>
       </div>
@@ -522,7 +532,7 @@
     <div class="footer-inner">
       <div class="footer-logo">Apprendiendo.net</div>
       <div class="footer-links">
-        <a href="/">Todos los cursos</a>
+        <a href="/"><span class="lang-es">Todos los cursos</span><span class="lang-en">All courses</span></a>
         <a href="https://www.linkedin.com/in/nazareno-anselmi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
       <div>© 2026 Apprendiendo.net</div>

@@ -29,6 +29,41 @@
   --shadow-btn: 0 10px 25px rgba(249, 115, 22, 0.25);
 }
 
+/* ===== i18n language switcher ===== */
+html:not([data-lang="en"]) .lang-en { display: none; }
+html[data-lang="en"] .lang-es { display: none; }
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.55);
+  color: var(--text-soft);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.lang-toggle:hover {
+  border-color: var(--accent);
+}
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.lang-toggle__sep { opacity: 0.35; margin: 0 0.05rem; }
+html:not([data-lang="en"]) .lang-toggle__es { color: var(--accent); }
+html[data-lang="en"] .lang-toggle__en { color: var(--accent); }
+:root[data-theme="light"] .lang-toggle {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.18);
+  color: var(--text-soft);
+}
+
 /* ===== Toggle button (works in both modes) ===== */
 .theme-toggle {
   display: inline-flex;
