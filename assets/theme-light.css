@@ -47,6 +47,33 @@ html[data-lang="en"] .lang-es { display: none; }
   }
 }
 
+/* Promo bar: asegurar que todo entre en una sola línea en desktop */
+@media (min-width: 900px) {
+  .promo-bar-inner {
+    max-width: 1380px !important;
+    padding: 0.45rem 1.5rem !important;
+    gap: 0.6rem !important;
+    flex-wrap: nowrap !important;
+  }
+  .promo-bar {
+    font-size: 0.78rem !important;
+  }
+  .promo-bar-highlight {
+    letter-spacing: 0.02em !important;
+    font-size: 0.74rem !important;
+    white-space: nowrap !important;
+  }
+  .promo-pill {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.55rem !important;
+    white-space: nowrap !important;
+  }
+  .promo-bar-deadline {
+    font-size: 0.74rem !important;
+    white-space: nowrap !important;
+  }
+}
+
 .lang-toggle {
   display: inline-flex;
   align-items: center;
