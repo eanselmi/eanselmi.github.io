@@ -33,27 +33,21 @@
 html:not([data-lang="en"]) .lang-en { display: none; }
 html[data-lang="en"] .lang-es { display: none; }
 
-/* Grupo de toggles (lang + theme) — siempre viajan juntos a la derecha */
+/* Grupo de toggles (lang + theme) — viajan siempre juntos */
 .promo-bar-actions {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
   flex-shrink: 0;
-  margin-left: auto;
-}
-@media (max-width: 720px) {
-  .promo-bar-actions {
-    margin-left: 0;
-  }
 }
 
-/* Promo bar: asegurar que todo entre en una sola línea en desktop */
+/* Promo bar: contenido centrado y compacto en desktop */
 @media (min-width: 900px) {
   .promo-bar-inner {
-    max-width: 1380px !important;
-    padding: 0.45rem 1.5rem !important;
-    gap: 0.6rem !important;
+    justify-content: center !important;
+    gap: 1.25rem !important;
     flex-wrap: nowrap !important;
+    padding: 0.45rem 1.5rem !important;
   }
   .promo-bar {
     font-size: 0.78rem !important;
@@ -66,10 +60,6 @@ html[data-lang="en"] .lang-es { display: none; }
   .promo-pill {
     font-size: 0.7rem !important;
     padding: 0.2rem 0.55rem !important;
-    white-space: nowrap !important;
-  }
-  .promo-bar-deadline {
-    font-size: 0.74rem !important;
     white-space: nowrap !important;
   }
 }
