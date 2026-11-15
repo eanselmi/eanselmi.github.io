@@ -1,7 +1,7 @@
 {
   "name": "Apprendiendo.net",
   "short_name": "Apprendiendo",
-  "description": "Cursos de Fortinet, Mikrotik, Terraform y FinOps con laboratorios hands-on.",
+  "description": "Cursos de Fortinet, Mikrotik y Terraform con laboratorios hands-on.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#050816",
