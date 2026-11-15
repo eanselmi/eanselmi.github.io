@@ -5,10 +5,14 @@
 
   function syncAria() {
     var isLight = root.getAttribute("data-theme") === "light";
-    toggle.setAttribute("aria-label", isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro");
+    var en = root.getAttribute("lang") === "en";
+    toggle.setAttribute("aria-label", isLight
+      ? (en ? "Switch to dark mode" : "Cambiar a modo oscuro")
+      : (en ? "Switch to light mode" : "Cambiar a modo claro"));
     toggle.setAttribute("aria-pressed", String(isLight));
   }
   syncAria();
+  document.addEventListener("langchange", syncAria);
 
   toggle.addEventListener("click", function () {
     var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";

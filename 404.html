@@ -33,6 +33,8 @@
     ul { list-style: none; padding: 1.5rem 0 0; margin: 2rem 0 0; border-top: 1px solid var(--line); display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); font-size: 0.92rem; }
     ul a { color: var(--text); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
     ul a:hover { color: var(--accent); }
+    html:not([data-lang="en"]) .lang-en { display: none; }
+    html[data-lang="en"] .lang-es { display: none; }
   </style>
 </head>
 <body>
@@ -41,16 +43,17 @@
 <i>Request timed out.</i>
 <b>$ traceroute esta-pagina</b>
  1  promos.apprendiendo.net  ok
- 2  * * *  <i>404: ruta no encontrada</i></pre>
-    <h1>Esta página no existe o cambió de dirección</h1>
-    <p>El enlace que seguiste no lleva a ningún lado. Todos los cursos y los cupones vigentes están en la página principal.</p>
-    <a class="btn" href="/">Ver todos los cursos</a>
+ 2  * * *  <i><span class="lang-es">404: ruta no encontrada</span><span class="lang-en">404: route not found</span></i></pre>
+    <h1><span class="lang-es">Esta página no existe o cambió de dirección</span><span class="lang-en">This page does not exist or has moved</span></h1>
+    <p><span class="lang-es">El enlace que seguiste no lleva a ningún lado. Todos los cursos y los cupones vigentes están en la página principal.</span><span class="lang-en">The link you followed leads nowhere. All courses and current coupons are on the home page.</span></p>
+    <a class="btn" href="/"><span class="lang-es">Ver todos los cursos</span><span class="lang-en">See all courses</span></a>
     <ul>
-      <li><a href="/fortinet-7-principiante-experto/">Curso de Fortinet FortiGate 7.x</a></li>
-      <li><a href="/mikrotik-principiante-experto/">Curso de MikroTik desde cero</a></li>
-      <li><a href="/terraform-principiante-certificado/">Curso de Terraform en español</a></li>
-      <li><a href="/fortinet-nse7-sdwan/">Curso Fortinet NSE7 SD-WAN</a></li>
+      <li><a href="/fortinet-7-principiante-experto/"><span class="lang-es">Curso de Fortinet FortiGate 7.x</span><span class="lang-en">Fortinet FortiGate 7.x course</span></a></li>
+      <li><a href="/mikrotik-principiante-experto/"><span class="lang-es">Curso de MikroTik desde cero</span><span class="lang-en">MikroTik course from scratch</span></a></li>
+      <li><a href="/terraform-principiante-certificado/"><span class="lang-es">Curso de Terraform en español</span><span class="lang-en">Terraform course in Spanish</span></a></li>
+      <li><a href="/fortinet-nse7-sdwan/"><span class="lang-es">Curso Fortinet NSE7 SD-WAN</span><span class="lang-en">Fortinet NSE7 SD-WAN course</span></a></li>
     </ul>
   </main>
+  <script src="/assets/i18n.js"></script>
 </body>
 </html>

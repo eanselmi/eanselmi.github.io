@@ -28,6 +28,12 @@
     document.querySelectorAll(".lang-toggle").forEach(function (btn) {
       btn.setAttribute("aria-label", lang === "en" ? "Cambiar a español" : "Switch to English");
     });
+    // Etiquetas accesibles: data-aria-en guarda la versión en inglés.
+    document.querySelectorAll("[data-aria-en]").forEach(function (el) {
+      if (!el.hasAttribute("data-aria-es")) el.setAttribute("data-aria-es", el.getAttribute("aria-label") || "");
+      el.setAttribute("aria-label", el.getAttribute(lang === "en" ? "data-aria-en" : "data-aria-es"));
+    });
+    document.dispatchEvent(new CustomEvent("langchange", { detail: lang }));
   }
 
   var saved = (function () { try { return localStorage.getItem("lang"); } catch (e) { return null; } })();
