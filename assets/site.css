@@ -322,3 +322,35 @@ ul.path-steps li::after { display: none; }
 }
 
 .nav-logo-mark { flex: none; }
+
+/* Tarjetas: botón secundario "Ver temario" del mismo ancho que el principal */
+.course-card .course-cta .btn,
+.course-card .course-more {
+  width: 100%;
+  min-width: 13.5rem;
+  max-width: 15rem;
+  justify-content: center;
+  text-align: center;
+}
+.course-card .course-cta { display: flex; justify-content: center; width: 100%; }
+.course-card .course-more { font-size: 0.82rem; padding: 0.55rem 1rem; }
+[data-theme="light"] .course-card .course-more { color: #334155; border-color: rgba(15, 23, 42, 0.22); }
+[data-theme="light"] .course-card .course-more:hover { color: #0f172a; border-color: rgba(15, 23, 42, 0.45); background: rgba(15, 23, 42, 0.04); }
+
+/* Garantía: los botones acompañan a la lista de la izquierda */
+.guarantee-section .guarantee-cta-row { margin-top: 1.4rem; }
+
+/* CTA final de la home: tarjeta con borde en lugar de banda suelta */
+:where(#testimonios) .final-cta {
+  padding: 2rem 1.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1.4rem;
+}
+.course-card .course-more { color: #e2e8f0; border-color: rgba(148, 163, 184, 0.55); background: rgba(148, 163, 184, 0.08); }
+.course-card .course-more:hover { color: #fff; border-color: rgba(226, 232, 240, 0.8); background: rgba(148, 163, 184, 0.16); }
+[data-theme="light"] .course-card .course-more { background: transparent; }
+
+@media (max-width: 420px) {
+  header .nav-logo { font-size: 0.74rem; letter-spacing: 0.04em; }
+  header .nav .btn { padding: 0.5rem 0.8rem; font-size: 0.78rem; }
+}
